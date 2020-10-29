@@ -4,7 +4,7 @@
 
 ### Project 03
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/prj_vplatoon.git/Project03?filepath=Project03.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/prj_vplatoon/blob/Project03/Project03.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/ITSProjects/main?filepath=Project03_VehPlatoon%2FProject03.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/ITSProjects/blob/main/Project03_VehPlatoon/Project03.ipynb)
 
 ## Overview
 
@@ -19,7 +19,7 @@ All functionalities are implemented in the following package [vplatoon](https://
 Download this repository
 
 ```{bash}
-git clone https://github.com/research-licit/prj_vplatoon.git
+git clone https://github.com/research-licit/ITSProjects.git
 ```
 
 Be sure to get [conda](https://www.anaconda.com/distribution/), then:
@@ -36,4 +36,4 @@ The code here contained is licensed under [MIT License](LICENSE)
 
 ## Contact 
 
-If you run into problems or bugs, please let us know by [creating an issue](https://github.com/research-licit/prj_vplatoon/issues/new) an issue in this repository.
+If you run into problems or bugs, please let us know by [creating an issue](https://github.com/research-licit/ITSProjects/issues/new) an issue in this repository.

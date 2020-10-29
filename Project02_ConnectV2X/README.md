@@ -4,7 +4,7 @@
 
 ### Project 02
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/prj_connectv2x.git/Project02?filepath=Project02.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/prj_connectv2x/blob/Project02/Project02.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/ITSProjects/main?filepath=Project02_ConnectV2X%2FProject02.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/ITSProjects/blob/main/Project02_ConnectV2X/Project02.ipynb)
 
 ## Overview
 
@@ -19,7 +19,7 @@ All functionalities are implemented in the following package [connectv2x](https:
 Download this repository
 
 ```{bash}
-git clone https://github.com/research-licit/prj_connectv2x.git
+git clone https://github.com/research-licit/ITSProjects.git
 ```
 
 Be sure to get [conda](https://www.anaconda.com/distribution/), then:
@@ -37,4 +37,4 @@ The code here contained is licensed under [MIT License](LICENSE)
 
 ## Contact 
 
-If you run into problems or bugs, please let us know by [creating an issue](https://github.com/research-licit/prj_connectv2x/issues/new) an issue in this repository.
+If you run into problems or bugs, please let us know by [creating an issue](https://github.com/research-licit/ITSProjects/issues/new) an issue in this repository.
