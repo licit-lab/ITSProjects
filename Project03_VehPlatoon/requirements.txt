@@ -1,0 +1,5 @@
+numpy
+bokeh
+pandas
+jupyter
+https://github.com/research-licit/vplatoon/archive/v0.2.0.tar.gz

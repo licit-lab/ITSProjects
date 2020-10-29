@@ -1,0 +1,24 @@
+name: 01_v2x
+
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - ipykernel
+  - black
+  - pytest
+  - ipywidgets
+  - numpy
+  - bokeh
+  - pylint
+  - pandas
+  - ipympl
+  - networkx
+  - selenium
+  - phantomjs
+  - matplotlib
+  - nodejs
+  - pip
+  - pip:
+      - https://github.com/research-licit/connectv2x/archive/v0.3.0.tar.gz

@@ -1,0 +1,5 @@
+numpy
+bokeh
+pandas
+https://github.com/research-licit/vplatoon/archive/v0.2.0.tar.gz
+https://github.com/research-licit/connectv2x/archive/v0.3.0.tar.gz

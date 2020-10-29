@@ -1,0 +1,5 @@
+numpy
+bokeh
+pandas
+jupyter
+https://github.com/research-licit/connectv2x/archive/v0.3.0.tar.gz
