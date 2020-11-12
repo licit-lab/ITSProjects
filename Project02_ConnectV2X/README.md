@@ -25,10 +25,8 @@ git clone https://github.com/research-licit/ITSProjects.git
 Be sure to get [conda](https://www.anaconda.com/distribution/), then:
 
 ```{bash}
-mkdir 01_v2x
-conda env create -f=environment.yaml -p 01_v2x
-conda activate path/to/folder/01_v2x
-jupyter labextension install jupyterlab_bokeh
+conda env create -f environment.yml
+conda activate ITSTools
 ```
 
 ## License

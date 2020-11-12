@@ -1,10 +1,10 @@
-name: 02_plt
+name: ITSTools
 
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
-  - jupyterlab=1.2.3
+  - python=3.8
+  - jupyterlab
   - ipykernel
   - black
   - pytest
@@ -22,5 +22,4 @@ dependencies:
   - nodejs
   - pip
   - pip:
-      - git+https://github.com/research-licit/vplatoon.git@v0.2.0
-      - git+https://github.com/research-licit/vplatoon.git@v0.3.0
+      - git+https://github.com/research-licit/itstools/archive/v0.5.0.tar.gz

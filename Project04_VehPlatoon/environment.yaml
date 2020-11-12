@@ -3,8 +3,8 @@ name: 02_plt
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
-  - jupyterlab=1.2.3
+  - python=3.8
+  - jupyterlab
   - ipykernel
   - black
   - pytest
@@ -22,4 +22,4 @@ dependencies:
   - nodejs
   - pip
   - pip:
-      - git+https://github.com/research-licit/vplatoon.git
+      - https://github.com/research-licit/vplatoon/archive/v0.2.0.tar.gz

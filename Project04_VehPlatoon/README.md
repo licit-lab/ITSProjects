@@ -26,8 +26,7 @@ Be sure to get [conda](https://www.anaconda.com/distribution/), then:
 
 ```{bash}
 conda env create -f environment.yml
-conda activate 02_plt
-jupyter labextension install jupyterlab_bokeh
+conda activate ITSTools
 ```
 
 ## License
