@@ -12,7 +12,7 @@ Project on connected vehicles
 
 ### Base functions 
 
-All functionalities are implemented in the following package [connectv2x](https://github.com/research-licit/connectv2x)
+All functionalities are implemented in the following package [itstools](https://github.com/research-licit/itstools)
 
 ## Reproducibility
 

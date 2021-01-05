@@ -2,13 +2,13 @@
 
 # Connected Vehicles 
 
-### Project 01
+### Project 05
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/ITSProjects/main?filepath=Project01_ConnectV2X%2FProject01.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/ITSProjects/blob/main/Project01_ConnectV2X/Project01.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/research-licit/ITSProjects/main?filepath=Project05_TrafficLights%2FProject05.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/research-licit/ITSProjects/blob/main/Project05_TrafficLights/Project05.ipynb)
 
 ## Overview
 
-Project on connected vehicles
+Project on traffic light control
 
 ### Base functions 
 

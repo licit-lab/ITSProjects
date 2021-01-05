@@ -12,7 +12,7 @@ Project on vehicle platooning
 
 ### Base functions 
 
-All functionalities are implemented in the following package [vplatoon](https://github.com/research-licit/vplatoon)
+All functionalities are implemented in the following package [itstools](https://github.com/research-licit/itstools)
 
 ## Reproducibility
 
