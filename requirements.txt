@@ -1,4 +1,4 @@
 numpy
 bokeh
 pandas
-https://github.com/research-licit/itstools/archive/v0.5.1.tar.gz
+https://github.com/licit-lab/itstools/archive/v0.5.1.tar.gz
