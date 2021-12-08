@@ -5,7 +5,7 @@ Aller à (lien dossier avec fiche installation + les fichiers tests)
 ## Traitement des fichiers de sortie
 Lien vers fichier de Hugues
 ## TP 
-<a href ="Projet09-VSL/Projet09-VSL.ypnb.ipynb">
+<a href ="Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Pour aller voir le sujet de TP <a/>  
 ## Liens utiles 
-doc sumo : <a href ="https://sumo.dlr.de/docs/">
-doc traci : <a href ="https://sumo.dlr.de/docs/TraCI.html">
+<a href ="https://sumo.dlr.de/docs/"> Pour aller voir la documentation SUMO <a/>  
+<a href ="https://sumo.dlr.de/docs/TraCI.html"> Pour aller voir la documentation TRACI <a/>  
