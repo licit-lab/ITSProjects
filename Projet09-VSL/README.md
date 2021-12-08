@@ -4,11 +4,8 @@
 Aller à (lien dossier avec fiche installation + les fichiers tests)
 ## Traitement des fichiers de sortie
 Lien vers fichier de Hugues
-## TP Partie 1 : Commune aux deux groupes 
-aller à dossier avec le réseau et fichier python 
-aller à : lien jupyter notebook
-## TP partie 2 : Consigne 
-aller à 
+## TP 
+<a href ="Projet09-VSL/Projet09-VSL.ypnb.ipynb">
 ## Liens utiles 
-doc sumo
-doc traci
+doc sumo : <a href ="https://sumo.dlr.de/docs/">
+doc traci : <a href ="https://sumo.dlr.de/docs/TraCI.html">
