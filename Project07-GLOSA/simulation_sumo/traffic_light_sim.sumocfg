@@ -1,0 +1,13 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="traffic_light_net.net.xml"/>   <!-- fichier reseau -->  
+        <route-files value="traffic_light_rou_sans_glosa.rou.xml"/> <!-- fichiers de la demande -->  
+        <additional-files value="tl_glosa.add.xml"/> 
+    </input>
+
+    <time>
+        <begin value="0"/>   <!-- debut de la simulation-->
+        <end value="3600"/>  <!-- fin de la simulation-->
+    </time>
+</configuration>

@@ -1,0 +1,16 @@
+<routes>
+    <vTypeDistribution id="vehicles">
+        <vType id="normal" color="0,255,255"  vClass="private"  probability="0" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2"  speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
+         <param key="has.glosa.device" value="false"/>  
+         </vType>
+        <vType id="CAV" color="255,0,255"  vClass="private" probability="1" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2" speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
+            <param key="has.glosa.device" value="true"/>
+            <param key="device.max.speedfactor" value="4"/>
+        </vType>
+    </vTypeDistribution>
+    
+    <flow id="myflow" begin="0" end="3600" number="2000" from="1to2" to="2to5" type="vehicles" departLane="free"/>
+    <!-- flow id="myflow1" begin="0" end="3600" number="500" from="3to2" to="2to4" type="CV"/-->
+    <!-- flow id="myflow2" begin="0" end="3600" number="300" from="1to2" to="2to3" type="CV"/-->
+    <!-- flow id="myflow3" begin="0" end="3600" number="300" from="5to2" to="2to1" type="CV"/-->
+</routes>
