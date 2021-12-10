@@ -1,0 +1,3 @@
+# Welcome to the Practical Exercise performed with HUBSIM
+
+This project is dedicated to analysing the impact of the disposal of Travel Time information on the road assignment. While some expert drivers will know about the usual congestions, a dummy driver will trend to follow the short path in distance. This practical exercise attempts to explore the impact of the information degree on the route choices operated by the drivers. It is assumed that Connected Driver will dispose of refined information, while non-connected drivers are restricted to their own knowledge of the network. The refinement degree of the information provided by the road operator is also under study.
