@@ -1,7 +1,7 @@
 
 # Projet O9 : titre
 ## Préambule : Installation de Sumo
-Aller à (lien dossier avec fiche installation + les fichiers tests)
+<a href = "https://github.com/licit-lab/ITSProjects/blob/415797d33cd19d347c11a93686661d55a7af4943/Projet09-VSL/SUMO_installation/notice_installation" Pour installer SUMO et vérifier le bon fonctionnement des simulations<a/>
 ## Traitement des fichiers de sortie
 Lien vers fichier de Hugues
 ## TP 
