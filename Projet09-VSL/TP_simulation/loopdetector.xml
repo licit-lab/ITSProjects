@@ -1,0 +1,55 @@
+	<additional>		
+		<inductionLoop id="LoopE0_0" lane="E_0" pos="0" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE0_1" lane="E_1" pos="0" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE0bis_0" lane="E_0" pos="500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE0bis_1" lane="E_1" pos="500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE1_0" lane="E_0" pos="1000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE1_1" lane="E_1" pos="1000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE1bis_0" lane="E_0" pos="1500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE1bis_1" lane="E_1" pos="1500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE2_0" lane="E_0" pos="2000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE2_1" lane="E_1" pos="2000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE2bis_0" lane="E_0" pos="2500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE2bis_1" lane="E_1" pos="2500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE3_0" lane="E_0" pos="3000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE3_1" lane="E_1" pos="3000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE3bis_0" lane="E_0" pos="3500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE3bis_1" lane="E_1" pos="3500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE4_0" lane="E_0" pos="4000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE4_1" lane="E_1" pos="4000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE4bis_0" lane="E_0" pos="4500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE4bis_1" lane="E_1" pos="4500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE5_0" lane="E_0" pos="5000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE5_1" lane="E_1" pos="5000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE5bis_0" lane="E_0" pos="5500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE5bis_1" lane="E_1" pos="5500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopE6_0" lane="E_0" pos="6000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE6_1" lane="E_1" pos="6000" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE6bis_0" lane="E_0" pos="6500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopE6bis_1" lane="E_1" pos="6500" freq="360" file="stats/out.xml"/>
+
+		<inductionLoop id="LoopS1_0" lane="unevoie_0" pos="0" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopS1_1" lane="unevoie_1" pos="0" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopS1bis_0" lane="unevoie_0" pos="500" freq="360" file="stats/out.xml"/>
+		<inductionLoop id="LoopS1bis_1" lane="unevoie_1" pos="500" freq="360" file="stats/out.xml"/>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+	
+	</additional>
