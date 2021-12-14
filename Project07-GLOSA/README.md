@@ -139,6 +139,10 @@ Il existe 4 paramètres GLOSA dans SUMO:
 <div align="justify">
 L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide des explications énumérer dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>. Pour ce faire des fichiers sont présents dans le dossier simulation_sumo. Ce repertoire comprends un reseau (fichier ```.net```), une fichier de la demande (```.rou```) qui contient la demande en transport ainsi que la distribution des types de véhicules. Puis un fichier additionel comprennant les paramètres du GLOSA pour le feux de circulation et finalement un fichier ```.sumocfg```qui est le fichier d'execution de la simulation. A noter encore que cette configuration de la simulation exclusif. Plusieurs types d'imbrication sont possible, libre à vous de la modifier pour proposer d'autres structures. 
  
+Deux objectifs sont à faire dans cette parties
+ - Trouver le débit de saturation du feux de circulation pour feux de circulation
+ - Avec ce débit de saturation évaluer la différences entre deux scénarios avec 0% et 100% de véhicules équiper de VAC
+ 
  
 </div>
 
