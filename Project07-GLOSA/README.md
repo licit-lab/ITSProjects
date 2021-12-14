@@ -37,14 +37,17 @@ On peut generaliser cette approches par des reseaux de multi-segment:
 
 Usuellement on peut traduire cette notion avec les images 1 et 2. La premier image montre un scenario où une voiture s'approche d'un feu de circulation n'étant pas équiper d'un GLOSA. Comme aucune information n'est transmisse au conducteur, la vitesse qu'il m'entiends l'obligera à s'arreter au vu rouge et redemarrer lorsque que le cycle repasse au vert. Dans le deuxieme scénario, on suppose cette fois que la voiture et le feux de circulation sont équipe de systèmes GLOSA et que le feux de circulation peut transmettre cette information à un distance fixe (double fleche communication). Tant que le vehicule ne se trouve pas dans cette zone, il "mientient" sa vitesse en espèrant passer au vert. Lorsqu'il rentre dans la zones de communication, le feux de circulation envoie une information indiquant la vitesse à adopter, en laucurence ralentir dans ce cas. Avec la nouvelle vitesse adopter, le conducteur n'aura pas besoin de s'arreter et pourra continuer son iterraire après avoir passer le feux de circulation.
  
- IMAGE
- IMAGE
+<p align="center">   
+ <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_sans_glosa.png" width="600">
+   <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_active.png" width="600">
+   </p>
  
  De manière similaire les deux images suivantes representes le cas au le feux de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesses vien évidamment. 
  
- IMAGE
-IMAGE
- 
+<p align="center">   
+ <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_sans_glosa_vert.png" width="600">
+   <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_vert.png" width="600">
+   </p>
  
  
   
