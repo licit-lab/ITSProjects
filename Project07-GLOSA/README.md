@@ -1,4 +1,6 @@
+
 <h1 align="center">Description du projet</h1>
+
 
 <h2 align="center">Analyse des impacts du GLOSA sur le traffic</h2>
 
@@ -118,7 +120,12 @@ L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide d
 Ajouter les refs suivantes
 https://www.researchgate.net/publication/259896470_Preparing_Simulative_Evaluation_of_the_GLOSA_Application
 
+<p align="center">
+<img src="https://www.entpe.fr/themes/custom/entpe/logo_entpe.png" width="450">
+<img src="https://www.pole-emc2.fr/app/uploads/logos_adherents/be04eddc-e2fa-f150-aed4-53957cf64731.jpg" width="450">
+</p>
+<p align="center">
+<img src="http://imu.universite-lyon.fr/wp-content/uploads/2015/08/LOGO-LICIT.png" width="450">
+</p>
 
 
-<img src="https://www.entpe.fr/themes/custom/entpe/logo_entpe.png" >
-<img src="https://www.pole-emc2.fr/app/uploads/logos_adherents/be04eddc-e2fa-f150-aed4-53957cf64731.jpg">
