@@ -13,7 +13,7 @@ Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communicat
 </div>
 <br/>
 <img src="https://s3-prod.autonews.com/OEM06_301239829_AR_-1_BOMDZEXWACYH.jpg">
-<h3 align="center">Principe du GLOSA</h3>
+<h3 align="center">Comment ça marche ?</h3>
 <br/> 
 
 <h2 align="center">GLOSA dans SUMO</h2>
