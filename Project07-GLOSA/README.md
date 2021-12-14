@@ -63,10 +63,11 @@ A noter que cette approche est similaire pour d'autres équipement en remplacant
 
 
 <h3 align="center">Equipement des feux de circulation</h3>
-
+<br/>
+<div align="justify">
 Il existent différentes manières de batir un simulation du traffic dans SUMO et s'est le cas pour le GLOSA. Pour implanter le GLOSA dans SUMO, il est possible de modifier le fichier ```.net```, mais ceci peut pertuber et fausser les resultats en cas de mauvaise manipulation. Dans notre cas et comme le préconnisse la documentation de SUMO, nous allons spécifié les paramètres du GLOSA du feux de circulation cible dans un fichier additionnel d'entréer. Pour acctiver la fonction GLOSA, il suffit de spéfier le paramettre de distance de comminication et en spécifier le id du feux de circulation et le programID:
-
-    
+<br/>
+  
 ```xml
 <tlLogic id="C" programID="0">
         <param key="device.glosa.range" value="60"/>
@@ -74,9 +75,10 @@ Il existent différentes manières de batir un simulation du traffic dans SUMO e
 ```
 
 Cette approche à l'avantage de cibler le feux de circulation du reseau, pour le faire sur directement sur la commande de simulation, il est possible de spécifier la distance de communication avec ```--device.glosa.range``` 
-
+</div> 
 <h3 align="center">Equipement des feux de circulation</h3>
-
+<br/>
+</div>  
 Il existe 4 paramètres GLOSA dans SUMO:
 
   <ul>
@@ -85,7 +87,7 @@ Il existe 4 paramètres GLOSA dans SUMO:
     <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication,i l s'applique au paramètre du véhicles et il est par defaut égale à 1.1</li>
     <li>jmDriveAfterYellowTime : Mouais</li>
     <br/>
-
+</div>  
 
 
 
