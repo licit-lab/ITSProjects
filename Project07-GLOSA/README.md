@@ -17,11 +17,30 @@ Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communicat
 <img src="https://s3-prod.autonews.com/OEM06_301239829_AR_-1_BOMDZEXWACYH.jpg">
 <h3 align="center">Comment ça marche ?</h3>
 <br/> 
+<div align="justify">
+Le GLOSA informe le conducteur du véhicle de la présence d'un feux de circulation en approche en lui informant de l'état du feux, il se peut que l'état soit différents à chaque voie. Deux cas peuvent se produire, soit le feux est rouge est dans ce cas le feux de circulation indique si oui ou non il pourra passer à la phase vert pour un changement de vitesse donnée. Soit la phase est déjà verts et dans ce cas, l'information concernet si oui ou non le véhicule pourra passer et selon une vitesse donnée. 
 
-Le GLOSA 
+Mathématique, il est possible de le traduire selon la formulation du mono-segment de <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
 
+"Soit un segment <i>s</i> de longueur <i>l</i>  connue ainsi que la vitesse minimal et maximale sur le segment [v_min,v_max] et l'horaire des feux de circulation <i>t_s</i> à la fin du segment qui définie l'état du feux de circulation à l'instant <i>t</i>, <i>t_s(t)={GREEN,YELOW,RED}</i>. Le but est de trouver la vitesse minimal <i>v</i> pour que le vehicules passer au vert:
+  
+  min v
+  s.t v_min≤v≤v_max,
+  t_s(l/v) = GREEN"
+  
+On peut generaliser cette approches par des reseaux de multi-segment:
+  
+"Soit une liste de n segment S={s_1,...,s_n}, avec leurs longueur l_i où 1<i<n, le vitesse minimun et maximun du segment i, [v_i_min,v_i_max], sont connue. L'horraire des feux de circulation t_s_i à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t_s_i(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseiller sur tout les segment, v={v_1,...,v_n} qui minimisera un certain objectif f(v):
+  
+  min f(v)
+  s.t v_i_min≤v_i≤v_i_max,
+  t_s_i(sumblabla)
+  "
+  
 
-
+  
+De manière plus complexe il est possible de formuler cette problèmatique dans l'obtique d'un étude de voie verte
+</div>
 <h3 align="center">Problèmatique du sujet?</h3>
 <br/> 
 <div align="justify">
