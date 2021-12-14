@@ -29,18 +29,20 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
 <br/>   
   <ul>
     <li>Soit nous ciblons le type de véhicules pour lequelle nous voulons équiper le dispositifs. Dans ce cas il faut modifier la structure des fichier d'entrée des véhicles pour integrer la commande: </li>
+<br/>
 
-</ul>
   
  ```xml 
   <param key="has.glosa.device" value="true"/>
   ```
+ </ul>
  <ul>
   <dd> Cette commende peut être inclues dans les vTypes ou bien directement dans la discription individuelles du véhicles.</dd> 
   </ul> 
   <ul>
     <li>Soit nous ciblons la probabilité d'insertion du véhicles sans entréer dans les fichiers d'entréer. Au quel cas, il faut spécifier la commande suivante lors du lancement de la simulation par le terminale:
     </li>
+    <br/>
     
   ```
   --device.fcd.probability 100
@@ -58,6 +60,34 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
 A noter que cette approche est similaire pour d'autres équipement en remplacant glosa par l'équipement présent dans SUMO.
 
 </div>  
+
+
+<h3 align="center">Equipement des feux de circulation</h3>
+
+Il existent différentes manières de batir un simulation du traffic dans SUMO et s'est le cas pour le GLOSA. Pour implanter le GLOSA dans SUMO, il est possible de modifier le fichier ```.net```, mais ceci peut pertuber et fausser les resultats en cas de mauvaise manipulation. Dans notre cas et comme le préconnisse la documentation de SUMO, nous allons spécifié les paramètres du GLOSA du feux de circulation cible dans un fichier additionnel d'entréer. Pour acctiver la fonction GLOSA, il suffit de spéfier le paramettre de distance de comminication et en spécifier le id du feux de circulation et le programID:
+
+    
+```xml
+<tlLogic id="C" programID="0">
+        <param key="device.glosa.range" value="60"/>
+</tlLogic>
+```
+
+Cette approche à l'avantage de cibler le feux de circulation du reseau, pour le faire sur directement sur la commande de simulation, il est possible de spécifier la distance de communication avec ```--device.glosa.range``` 
+
+<h3 align="center">Equipement des feux de circulation</h3>
+
+Il existe 4 paramètres GLOSA dans SUMO:
+
+  <ul>
+    <li>device.glosa.range : spécifier la distance de communication du feux de circulation,il s'applique sur le feux de circulation et il est par defaut égale à 100 mètres</li>
+    <li>device.glosa.min-seed : indique la vitesse minimun pour effectuer la manoeuvre, il s'applique au paramètre du véhicles et il est par defaut égale à 5m/s soit 18 km/h</li>
+    <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication,i l s'applique au paramètre du véhicles et il est par defaut égale à 1.1</li>
+    <li>jmDriveAfterYellowTime : Mouais</li>
+    <br/>
+
+
+
 
 <h1 align="center">Bibliographie</h1>
 
