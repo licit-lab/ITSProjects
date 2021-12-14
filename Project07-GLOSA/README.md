@@ -140,8 +140,7 @@ Il existe 4 paramètres GLOSA dans SUMO:
 L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide des explications énumérer dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>. Pour ce faire des fichiers sont présents dans le dossier simulation_sumo. Ce repertoire comprends un reseau (fichier ```.net```), une fichier de la demande (```.rou```) qui contient la demande en transport ainsi que la distribution des types de véhicules. Puis un fichier additionel comprennant les paramètres du GLOSA pour le feux de circulation et finalement un fichier ```.sumocfg```qui est le fichier d'execution de la simulation. A noter encore que cette configuration de la simulation exclusif. Plusieurs types d'imbrication sont possible, libre à vous de la modifier pour proposer d'autres structures. 
  
 Deux objectifs sont à faire dans cette parties
- - Trouver le débit de saturation du reseau et la capcité du feux de circulation pour feux de circulation
- - Avec ce débit de saturation évaluer la différences entre deux scénarios avec 0% et 100% de véhicules équiper de VAC
+ - Avec un choix judicieux sur la demande, évaluer la différences les scénarios avec 0% et 100% de véhicules équiper de VAC
  
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
@@ -151,6 +150,28 @@ Ci dessous vous trouverez quelques sources utiles au traitement de cette partie:
  https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf
  
 </div>
+
+<h2 align="center">Partie II : Modification de la demande</h2>
+
+Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa limite en fonctionne de la demande. Ainsi dans cette partie, il est demande de:
+
+- A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
+- A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
+
+<h2 align="center">Partie II : Modification des facteurs</h2>
+
+
+Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demander de:
+
+- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
+- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur. 
+
+<h2 align="center">Partie II : Modification du reseau</h2>
+
+Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du reseau étudiant. Ainsi dans cette partie ouverte, il est demander de:
+
+- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
+- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
 
 
 <h2 align="center">Modalités d'évaluation</h2>
