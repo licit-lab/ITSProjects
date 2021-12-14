@@ -127,7 +127,7 @@ Cette approche à l'avantage de cibler le feux de circulation du reseau, pour le
 Il existe 4 paramètres GLOSA dans SUMO:
 
   <ul>
-    <li>device.glosa.range : spécifier la distance de communication du feux de circulation,il s'applique sur le feux de circulation et il est par defaut égale à 100 mètres</li>
+    <li>device.glosa.range : spécifier la distance de communication du feux de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par defaut égale à 100 mètres</li>
     <li>device.glosa.min-seed : indique la vitesse minimun pour effectuer la manoeuvre, il s'applique au paramètre du véhicles et il est par defaut égale à 5m/s soit 18 km/h</li>
     <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication,i l s'applique au paramètre du véhicles et il est par defaut égale à 1.1</li>
     <li>jmDriveAfterYellowTime : Mouais</li>
