@@ -144,6 +144,8 @@ Deux objectifs sont à faire dans cette parties
  - Avec ce débit de saturation évaluer la différences entre deux scénarios avec 0% et 100% de véhicules équiper de VAC
  
  
+Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
+ 
 </div>
 
 <h2 align="center">Bibliographie</h2>
