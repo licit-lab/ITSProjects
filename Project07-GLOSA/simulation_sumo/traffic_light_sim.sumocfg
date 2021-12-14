@@ -3,7 +3,6 @@
     <input>
         <net-file value="traffic_light_net.net.xml"/>   <!-- fichier reseau -->  
         <route-files value="traffic_light_rou_sans_glosa.rou.xml"/> <!-- fichiers de la demande -->  
-        <additional-files value="tl_glosa.add.xml"/> 
     </input>
 
     <time>
