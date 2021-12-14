@@ -141,13 +141,16 @@ L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide d
 </div>  
 
 <h2 align="center">Bibliographie</h2>
-
-[1] M. Seredynski, B. Dorronsoro and D. Khadraoui, "Comparison of Green Light Optimal Speed Advisory approaches," 16th International IEEE Conference on Intelligent Transportation Systems (ITSC 2013), 2013, pp. 2187-2192, doi: 10.1109/ITSC.2013.6728552.
-[2] Stevanovic A, Stevanovic J, Kergaye C. Green Light Optimized Speed Advisory Systems: Impact of Signal Phasing Information Accuracy. Transportation Research Record. 2013;2390(1):53-59. doi:10.3141/2390-06
-[3] K. Katsaros, R. Kernchen, M. Dianati and D. Rieck, "Performance study of a Green Light Optimized Speed Advisory (GLOSA) application using an integrated cooperative ITS simulation platform," 2011 7th International Wireless Communications and Mobile Computing Conference, 2011, pp. 918-923, doi: 10.1109/IWCMC.2011.5982524.
-[4] Stebbins, S., Hickman, M., Kim, J., Vu, H.L., 2017. Characterising green light optimal speed advisory trajectories for platoon-based optimisation. Transport. Res. Part C:Emerg. Technol. 82, 43–62.
-[5] https://www.neogls.com/produit/glosa/
-
+<br/> 
+<div align="justify">
+<ul>
+<dd> [1] M. Seredynski, B. Dorronsoro and D. Khadraoui, "Comparison of Green Light Optimal Speed Advisory approaches," 16th International IEEE Conference on Intelligent Transportation Systems (ITSC 2013), 2013, pp. 2187-2192, doi: 10.1109/ITSC.2013.6728552.</dd> 
+<dd> [2] Stevanovic A, Stevanovic J, Kergaye C. Green Light Optimized Speed Advisory Systems: Impact of Signal Phasing Information Accuracy. Transportation Research Record. 2013;2390(1):53-59. doi:10.3141/2390-06</dd> 
+<dd> [3] K. Katsaros, R. Kernchen, M. Dianati and D. Rieck, "Performance study of a Green Light Optimized Speed Advisory (GLOSA) application using an integrated cooperative ITS simulation platform," 2011 7th International Wireless Communications and Mobile Computing Conference, 2011, pp. 918-923, doi: 10.1109/IWCMC.2011.5982524.</dd> 
+<dd> [4] Stebbins, S., Hickman, M., Kim, J., Vu, H.L., 2017. Characterising green light optimal speed advisory trajectories for platoon-based optimisation. Transport. Res. Part C:Emerg. Technol. 82, 43–62.</dd> 
+<dd> [5] https://www.neogls.com/produit/glosa/</dd> 
+</ul>
+</div>
 Ajouter les refs suivantes
 https://www.researchgate.net/publication/259896470_Preparing_Simulative_Evaluation_of_the_GLOSA_Application
 
