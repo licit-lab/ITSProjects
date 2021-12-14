@@ -9,14 +9,25 @@
 <h2 align="center" id="GLOSA?">Qu'est-ce que le GLOSA ?</h2>
 <br/> 
 <div align="justify">
-Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communication infrastructure-to-vehicles (I2V) qui permets d'envoier des informations rélatifs à l'état du feux de circulation vers les véhicules connectées. L'objectif de cette communication est d'utiliser les informations sur le temps des feux de circulation pour optimiser la vitesse des véhicules à leurs passages [1]. Ce cas d'utilisation des ITS n'est pas une problèmatiques récentes et fait déjà integréer dans certaines villes. 
+Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communication infrastructure-to-vehicles (I2V) qui permets d'envoier des informations rélatifs à l'état du feux de circulation vers les véhicules connectées. L'objectif de cette communication est d'utiliser les informations sur le temps des feux de circulation pour optimiser la vitesse des véhicules à leurs passages [1]. Ce cas d'utilisation des ITS n'est pas une problèmatiques récentes [2,3,4] et fait déjà integréer dans certaines villes [5]. 
 </div>
 <br/>
 <img src="https://s3-prod.autonews.com/OEM06_301239829_AR_-1_BOMDZEXWACYH.jpg">
 <h3 align="center">Comment ça marche ?</h3>
 <br/> 
 
-<h2 align="center">GLOSA dans SUMO</h2>
+Le GLOSA 
+
+
+
+<h3 align="center">Problèmatique du sujet?</h3>
+<br/> 
+<div align="justify">
+Un enjeux de la mise en place de ce cas d'utilisations sucistes quelques questionnement. Quelles est sont impactes sur le traffic ? Ce type permets t-il de réduire la congestion au bords d'un feux de circulation ? Peut-il reduire les émissions relatif au traffic ? ect... Toutes ces questions sont au centre du GLOSA et le but de ce sujet et d'analyser ces impacts. Avant d'aborder les préceptives de recherches, nous allons voir comme elle s'ingre dans l'outil de simulation SUMO (Simulation of Urban MObility).
+</div>
+
+
+<h2 align="center" id="GLOSASUMO">GLOSA dans SUMO</h2>
 <br/> 
 <div align="justify">
 Contrairement à d'autres systèmes de transport intelligent qui nécessite l'utilisation de <a href="https://sumo.dlr.de/docs/TraCI.html">TraCi</a> dans SUMO, des modules de <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a>  ont été créé dans SUMO depuis la version 1.9.1. Comme nous l'avons vu dans la section <i><a href="#GLOSA?">Qu'est-ce que le GLOSA ?</a></i>, la fonction GLOSA informe les véhicles de deux manière. La première manière est une information de realentissement, dans ce cas l'infrastructure informe si le vehicule doit ralentir au vu d'un arret par faute de temps ou pour un passage lors d'un changement de phase. La deuxième manière est une information d'accélération, le feux de circulation informe le véhicles qu'il doit augmenter sa vitesse pour pouvoir passer au vert. Pour mettre en place ce module, il faut à la fois équiper les véhicles et les feux de circulation ciblé. 
@@ -90,8 +101,24 @@ Il existe 4 paramètres GLOSA dans SUMO:
     <br/>
 </div>  
 
+<h2 align="center">Partie I : Mise en place du GLOSA</h2>
+<br/> 
+<div align="justify">
+L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide des explications énumérer dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>
+</div>  
 
-
-<h1 align="center">Bibliographie</h1>
+<h2 align="center">Bibliographie</h2>
 
 [1] https://ieeexplore.ieee.org/document/6728552
+[2] https://www.researchgate.net/profile/Aleksandar-Stevanovic/publication/275855428_Green_Light_Optimized_Speed_Advisory_Systems/links/564cd2f708aeafc2aaaf8322/Green-Light-Optimized-Speed-Advisory-Systems.pdf
+[3] https://ieeexplore.ieee.org/abstract/document/5982524
+[4] https://www.sciencedirect.com/science/article/pii/S0968090X17301675
+[5] https://www.neogls.com/produit/glosa/
+
+Ajouter les refs suivantes
+https://www.researchgate.net/publication/259896470_Preparing_Simulative_Evaluation_of_the_GLOSA_Application
+
+
+
+<img src="https://www.entpe.fr/themes/custom/entpe/logo_entpe.png" >
+<img src="https://www.pole-emc2.fr/app/uploads/logos_adherents/be04eddc-e2fa-f150-aed4-53957cf64731.jpg">
