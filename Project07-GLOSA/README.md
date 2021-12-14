@@ -45,7 +45,6 @@ Usuellement on peut traduire cette notion avec les images 1 et 2. La premier ima
  De manière similaire les deux images suivantes representes le cas au le feux de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesses vien évidamment. 
  
 <p align="center">   
- <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_sans_glosa_vert.png" width="450">
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_vert.png" width="450">
    </p>
  
