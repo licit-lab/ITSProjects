@@ -140,11 +140,15 @@ Il existe 4 paramètres GLOSA dans SUMO:
 L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide des explications énumérer dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>. Pour ce faire des fichiers sont présents dans le dossier simulation_sumo. Ce repertoire comprends un reseau (fichier ```.net```), une fichier de la demande (```.rou```) qui contient la demande en transport ainsi que la distribution des types de véhicules. Puis un fichier additionel comprennant les paramètres du GLOSA pour le feux de circulation et finalement un fichier ```.sumocfg```qui est le fichier d'execution de la simulation. A noter encore que cette configuration de la simulation exclusif. Plusieurs types d'imbrication sont possible, libre à vous de la modifier pour proposer d'autres structures. 
  
 Deux objectifs sont à faire dans cette parties
- - Trouver le débit de saturation du feux de circulation pour feux de circulation
+ - Trouver le débit de saturation du reseau et la capcité du feux de circulation pour feux de circulation
  - Avec ce débit de saturation évaluer la différences entre deux scénarios avec 0% et 100% de véhicules équiper de VAC
  
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
+ 
+Ci dessous vous trouverez quelques sources utiles au traitement de cette partie:
+ 
+ https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf
  
 </div>
 
@@ -153,7 +157,7 @@ Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact s
 
 Oral: Note: Je n'ai pas personnellement les questions pièges
 
-Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder les 10-15 pages, evitez donc trop de répétition et de divager sur certains points, notamment dans l'introduction et dans la conclusion
+Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder les 10-15 pages, evitez donc trop de répétition et de divager sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisagables
 
 Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
