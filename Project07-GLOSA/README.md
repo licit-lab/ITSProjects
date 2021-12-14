@@ -22,21 +22,18 @@ Le GLOSA informe le conducteur du véhicle de la présence d'un feux de circulat
 
 Mathématique, il est possible de le traduire selon la formulation du mono-segment de <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
 
-"Soit un segment <i>s</i> de longueur <i>l</i>  connue ainsi que la vitesse minimal et maximale sur le segment [v_min,v_max] et l'horaire des feux de circulation <i>t_s</i> à la fin du segment qui définie l'état du feux de circulation à l'instant <i>t</i>, <i>t_s(t)={GREEN,YELOW,RED}</i>. Le but est de trouver la vitesse minimal <i>v</i> pour que le vehicules passer au vert:
-  
-  min v
-  s.t v_min≤v≤v_max,
-  t_s(l/v) = GREEN"
-  
+"Soit un segment <i>s</i> de longueur <i>l</i>  connue ainsi que la vitesse minimal et maximale sur le segment [v<sup>min</sup>,v<sup>max</sup>] et l'horaire des feux de circulation <i>t<sub>s</sub></i> à la fin du segment qui définie l'état du feux de circulation à l'instant <i>t</i>, <i>t<sub>s</sub>(t)={GREEN,YELOW,RED}</i>. Le but est de trouver la vitesse minimal <i>v</i> pour que le vehicules passer au vert":
+ 
+<p align="center"> 
+  <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-48%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
+  </p>
 On peut generaliser cette approches par des reseaux de multi-segment:
   
-"Soit une liste de n segment S={s_1,...,s_n}, avec leurs longueur l_i où 1<i<n, le vitesse minimun et maximun du segment i, [v_i_min,v_i_max], sont connue. L'horraire des feux de circulation t_s_i à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t_s_i(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseiller sur tout les segment, v={v_1,...,v_n} qui minimisera un certain objectif f(v):
-  
-  min f(v)
-  s.t v_i_min≤v_i≤v_i_max,
-  t_s_i(sumblabla)
-  "
-  
+"Soit une liste de n segment S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leurs longueur l<sub>i</sub> où 1<i<n, le vitesse minimun et maximun du segment i, [v<sub>i</sub><sup>min</sup>,v<sub>i</sub><sup>max</sup>], sont connue. L'horraire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseiller sur tout les segment, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+
+<p align="center">   
+   <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-40%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
+   </p>
 
   
 De manière plus complexe il est possible de formuler cette problèmatique dans l'obtique d'un étude de voie verte
