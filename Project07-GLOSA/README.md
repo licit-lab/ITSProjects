@@ -193,7 +193,7 @@ Ci dessous vous trouverez quelques sources utiles au traitement du projet:
 
 <h2 align="center">Modalités d'évaluation</h2>
 
-Oral: Note: Je n'ai pas personnellement les questions pièges
+Oral: Note: Je n'aime pas personnellement les questions pièges
 
 Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder les 10-15 pages, evitez donc trop de répétition et de divager sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisagables
 
