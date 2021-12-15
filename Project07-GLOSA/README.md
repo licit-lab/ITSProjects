@@ -139,12 +139,14 @@ Il existe 4 paramètres GLOSA dans SUMO:
 L'objectif de cette premier partie est d'integrer un systèmes GLOSA à l'aide des explications énumérer dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>. Pour ce faire des fichiers sont présents dans le dossier simulation_sumo. Ce repertoire comprends un reseau (fichier ```.net```), une fichier de la demande (```.rou```) qui contient la demande en transport ainsi que la distribution des types de véhicules. Puis un fichier additionel comprennant les paramètres du GLOSA pour le feux de circulation et finalement un fichier ```.sumocfg```qui est le fichier d'execution de la simulation. A noter encore que cette configuration de la simulation exclusif. Plusieurs types d'imbrication sont possible, libre à vous de la modifier pour proposer d'autres structures. 
  
  
-Quelques caratèristiques du reseaux:
+Quelques caratèristiques de la simulation:
  
  - Cycle de feux : 90s
  - Demande total : 1800veh/h
  - Longueur de l'artaire principale avant le feux de circulation : 1000 m
  - Nombre de voie du tronçon principale : 2
+ - Distance de communication du GLOSA : 500 m
+ - Facteur de vitesse lors de la communication avec le GLOSA: 1.1
  
 Defintion du TP de PA:  
  
@@ -158,7 +160,7 @@ in terms of travel time when he is starting to move. We will assume that all the
 of information in the same way when information is available. It matches with a Market
 Penetration Rate of 100% of Connected Vehicles
  
- <b>Q1: </b> Avec un choix judicieux sur la demande, évaluer la différences les scénarios avec un MPR=0% et un MPR=100% de véhicules équiper de VAC
+ <b>Q1: </b> Avec un choix judicieux sur la demande, évaluer la différences les scénarios implquant le GLOSA avec un MPR=0% et un MPR=100% 
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
  
