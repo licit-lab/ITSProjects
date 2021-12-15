@@ -169,7 +169,7 @@ Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demander de:
 
 - A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
-- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur. 
+- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
 
 <h2 align="center">Partie II : Modification du reseau</h2>
 
