@@ -170,23 +170,23 @@ Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact s
 
 Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa limite en fonctionne de la demande. Ainsi dans cette partie, il est demande de:
 
- <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
- <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
+ - <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
+ - <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
 
 <h2 align="center">Partie II : Modification des facteurs</h2>
 
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demander de:
 
- <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
- <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
+ - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
+ - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
 
 <h2 align="center">Partie II : Modification du reseau</h2>
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du reseau étudiant. Ainsi dans cette partie ouverte, il est demander de:
 
- <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
- <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
+ - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
+ - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
 
 
 <h2 align="center">Sources utiles</h2>
