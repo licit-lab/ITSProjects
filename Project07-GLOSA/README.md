@@ -152,9 +152,7 @@ Deux objectifs sont à faire dans cette parties
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
  
-Ci dessous vous trouverez quelques sources utiles au traitement de cette partie:
- 
- https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf
+
  
 </div>
 
@@ -179,6 +177,18 @@ Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses
 
 - A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
 - A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
+
+
+<h2 align="center">Sources utiles</h2>
+
+Ci dessous vous trouverez quelques sources utiles au traitement du projet:
+
+- https://sumo.dlr.de/docs/netconvert.html
+- https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf
+- https://sumo.dlr.de/docs/Simulation/GLOSA.html
+
+ 
+ 
 
 
 <h2 align="center">Modalités d'évaluation</h2>
