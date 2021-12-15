@@ -5,8 +5,8 @@
 ## Introduction 
 
   
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png
-   :align: center
+<im src=" https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png">
+
    
 Les systèmes de régulation dynamiques consistent à:
   1) détecter dynamiquement une zone de congestion sur une voie rapide
