@@ -19,10 +19,11 @@ Le projet a pour objectifs :
   4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en assurer une inédite et plus efficace.
 
 ## TP 
-<a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Pour aller voir le sujet de TP <a/>  
-<a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> Pour récupérer les fichiers de simulation <a/>  
+<a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. <a/> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
+<a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> Vous pouvez récupérer les fichiers de simulation et le  script python à compléter ici. <a/> Votre script python complété est également attendu dans votre rendu final.
+  
 ## Outils pour traiter les fichiers de sortie
-Lien vers fichier de Hugue
+Lien vers fichier de traitement. Pour vous aider à analyser les fichiers de sortie vous pouvez aller voir ici.
 ## Liens utiles 
 <a href ="https://sumo.dlr.de/docs/"> Pour aller voir la documentation SUMO <a/>  
 <a href ="https://sumo.dlr.de/docs/TraCI.html"> Pour aller voir la documentation TRACI <a/>  
