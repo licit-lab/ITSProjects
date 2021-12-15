@@ -146,9 +146,19 @@ Quelques caratèristiques du reseaux:
  - Longueur de l'artaire principale avant le feux de circulation : 1000 m
  - Nombre de voie du tronçon principale : 2
  
-Deux objectifs sont à faire dans cette parties
- - Avec un choix judicieux sur la demande, évaluer la différences les scénarios avec 0% et 100% de véhicules équiper de VAC
+Defintion du TP de PA:  
  
+- MPR=0%: the drivers are not connected and do not dispose of information about the current
+traffic conditions, except the information resulting from their expert knowledge (i.e. they know
+about usual conditions): this is equivalent to a Market Penetration Rate (MPR) set to 0%.
+ 
+- MPR=100%: the drivers dispose of updated traffic information broadcasted online (in real-time
+or almost) by a Human-Machine-Interface (HMI). It enables the driver to pick up the best option
+in terms of travel time when he is starting to move. We will assume that all the drivers dispose
+of information in the same way when information is available. It matches with a Market
+Penetration Rate of 100% of Connected Vehicles
+ 
+ <b>Q1: </b> Avec un choix judicieux sur la demande, évaluer la différences les scénarios avec un MPR=0% et un MPR=100% de véhicules équiper de VAC
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
  
@@ -160,23 +170,23 @@ Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact s
 
 Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa limite en fonctionne de la demande. Ainsi dans cette partie, il est demande de:
 
-- A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
-- A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
+ <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
+ <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
 
 <h2 align="center">Partie II : Modification des facteurs</h2>
 
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demander de:
 
-- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
-- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
+ <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
+ <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
 
 <h2 align="center">Partie II : Modification du reseau</h2>
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du reseau étudiant. Ainsi dans cette partie ouverte, il est demander de:
 
-- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
-- A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
+ <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
+ <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
 
 
 <h2 align="center">Sources utiles</h2>
