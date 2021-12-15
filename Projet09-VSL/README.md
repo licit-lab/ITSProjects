@@ -22,7 +22,7 @@ Le projet a pour objectifs :
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Pour aller voir le sujet de TP <a/>  
 <a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> Pour récupérer les fichiers de simulation <a/>  
 ## Outils pour traiter les fichiers de sortie
-Lien vers fichier de Hugues
+Lien vers fichier de Hugue
 ## Liens utiles 
 <a href ="https://sumo.dlr.de/docs/"> Pour aller voir la documentation SUMO <a/>  
 <a href ="https://sumo.dlr.de/docs/TraCI.html"> Pour aller voir la documentation TRACI <a/>  
