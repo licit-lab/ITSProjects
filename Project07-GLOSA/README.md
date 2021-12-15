@@ -147,7 +147,7 @@ Quelques caratèristiques de la simulation:
  - Nombre de voie du tronçon principale : 2
  - Distance de communication du GLOSA : 500 m
  - Facteur de vitesse lors de la communication avec le GLOSA: 1.1
- 
+ <br/>
 Defintion du TP de PA:  
  
 - MPR=0%: the drivers are not connected and do not dispose of information about the current
