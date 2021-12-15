@@ -4,8 +4,9 @@
 <a href = "https://github.com/licit-lab/ITSProjects/blob/415797d33cd19d347c11a93686661d55a7af4943/Projet09-VSL/SUMO_installation/notice_installation"> Pour installer SUMO et vérifier le bon fonctionnement des simulations <a/>
 ## Introduction 
 
-  
-<img src=" https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png">
+<p align="center">
+  <img src="https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png">
+</p>
 
    
 Les systèmes de régulation dynamiques consistent à:
