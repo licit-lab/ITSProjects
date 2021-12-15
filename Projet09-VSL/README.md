@@ -14,7 +14,7 @@ Les systèmes de régulation dynamiques consistent à:
   2) donner une consigne de limitation de vitesse en amont de cette zone
   
 <p align="center">
-  <img src="https://github.com/licit-lab/ITSProjects/blob/d1a9542a1551a1d77dae1b51503c3b283d9c1ec0/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.31.13.png">
+  <img src="https://github.com/licit-lab/ITSProjects/blob/d1a9542a1551a1d77dae1b51503c3b283d9c1ec0/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.31.13.png" idth="48">
 </p>
 
 Le but est ainsi de limiter le flux arrivant sur la zone de congestion pour limiter sa propagation voir même la dissiper.
