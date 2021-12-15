@@ -11,22 +11,26 @@ Des incidents sur le réseau (accidents, conditions météréologiques dégradé
   <img src="https://github.com/licit-lab/ITSProjects/blob/bc9f7715036f5477dbb52d34f2447863a14cb2a6/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png" width="800">
 </p>
 
-De nouvelles stratégies de contrôle, associés au développement des Systèmes de Transport Intelligent (ITS) et notamment des Véhicules Connectés (CV), ont été développé à partir des années 90. Les systèmes de régulation dynamiques de vitesses font ainsi partie des plus populaires d'entre elles dans la littérature. Ils  consistent à:
+De nouvelles stratégies de contrôle, associés au développement des Systèmes de Transport Intelligent (STI) et notamment des Véhicules Connectés (VC), ont été développé à partir des années 90. Les systèmes de régulation dynamiques de vitesses font ainsi partie des plus populaires d'entre elles dans la littérature. Ils  consistent à:
   1) détecter dynamiquement une zone de congestion sur une voie rapide
   2) donner une consigne de limitation de vitesse en amont de cette zone.
   
 Le but est ainsi de limiter le flux arrivant sur la zone de congestion pour limiter sa propagation voir même la dissiper.
 
-Le système détermine donc à partir de quelle distance et pour combien de temps il est nécessaire que les véhicules appliquent la limitation de vitesse pour que la congestion soit dissipée lorsque ceux-ci arrivent sur la zone de ralentissement.
+Les systèmes déterminent donc à partir de quelle distance et pour combien de temps il est nécessaire que les véhicules appliquent la limitation de vitesse pour que la congestion soit dissipée lorsque ceux-ci arrivent sur la zone de ralentissement.
+ 
+Si en premier lieu, ils reposaient sur les données issus des boucles électromagnétiques pour trouver cette distance et ce temps et sur les Panneaux à Messages Variables (PMV) pour délivrer le contrôle, on voit désormais aparaître des systèmes reposant entièrement sur les VC et la communication I2V( Infrastructure-Véhicule) (à l'aide d'Unités de Bords de Route (UBR)).
 
 <p align="center">
   <img src="https://github.com/licit-lab/ITSProjects/blob/d1a9542a1551a1d77dae1b51503c3b283d9c1ec0/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.31.13.png" width="600">
 </p>
+
+Ici, on s'intéressera à l'impact des VC pour délivrer le contrôle.
   
 ## Objectifs du projet
 Le projet a pour objectifs : 
   1) Prendre en main les outils de simulation SUMO/TRACI
-  2) Implémenter un système de régulation dynamique des vitesses simplifié et basé sur les véhicules connectés
+  2) Implémenter un système de régulation dynamique des vitesses simplifié et où le contrôle est basé sur les véhicules connectés
   3) Appréhender la sensibilité d'un tel système au taux de pénétration (nombre de véhicules connectés/nombre total de véhicules
   4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en assurer une inédite et plus efficace.
 
