@@ -160,7 +160,14 @@ in terms of travel time when he is starting to move. We will assume that all the
 of information in the same way when information is available. It matches with a Market
 Penetration Rate of 100% of Connected Vehicles
  
- <b>Q1: </b> Avec un choix judicieux sur la demande, évaluer la différences les scénarios implquant le GLOSA avec un MPR=0% et un MPR=100% 
+<h3 align="center"> <i>Question 1 </i> </h3>
+ 
+Pour cette question, il vous sera demander d'évaluer et de comporer la mise en place du GLOSA pour deux scénarios, un scénario avec MPR=0% et un MPR=100%.
+ 
+Pour l'analyse globale, vous devrait évaluer la différents en terme de:
+ - Temps de parcours cumulé
+ 
+Le but de cette MPR=0% et un MPR=100% 
  
 Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
  
