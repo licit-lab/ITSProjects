@@ -5,13 +5,17 @@
 ## Introduction 
 
 <p align="center">
-  <img src="https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png">
+  <img src="https://github.com/licit-lab/ITSProjects/blob/bc9f7715036f5477dbb52d34f2447863a14cb2a6/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png">
 </p>
 
-   
+
 Les systèmes de régulation dynamiques consistent à:
   1) détecter dynamiquement une zone de congestion sur une voie rapide
   2) donner une consigne de limitation de vitesse en amont de cette zone
+  
+<p align="center">
+  <img src="https://github.com/licit-lab/ITSProjects/blob/bc9f7715036f5477dbb52d34f2447863a14cb2a6/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png">
+</p>
 
 Le but est ainsi de limiter le flux arrivant sur la zone de congestion pour limiter sa propagation voir même la dissiper.
 
@@ -25,6 +29,11 @@ Le projet a pour objectifs :
   4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en assurer une inédite et plus efficace.
 
 ## TP 
+Présentation du réseau.
+<p align="center">
+  <img src="https://github.com/licit-lab/ITSProjects/blob/bc9f7715036f5477dbb52d34f2447863a14cb2a6/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png">
+</p>
+  
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. <a/> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
 <a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> Vous pouvez récupérer les fichiers de simulation et le  script python à compléter ici. <a/> Votre script python complété est également attendu dans votre rendu final.
   
