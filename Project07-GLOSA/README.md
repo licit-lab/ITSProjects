@@ -160,12 +160,16 @@ in terms of travel time when he is starting to move. We will assume that all the
 of information in the same way when information is available. It matches with a Market
 Penetration Rate of 100% of Connected Vehicles
  
-<h3 align="center"> <i>Question 1 </i> </h3>
+ <b>Question 1</b>
  
 Pour cette question, il vous sera demander d'évaluer et de comporer la mise en place du GLOSA pour deux scénarios, un scénario avec MPR=0% et un MPR=100%.
  
 Pour l'analyse globale, vous devrait évaluer la différents en terme de:
  - Temps de parcours cumulé
+ - Temps perdu 
+ - Nombre de véhicules qui s'arrete
+ - Volume des vehicules l'arrêt et le pourcentage de véhicules à l'arret en fonction du taux de pernettration des VAC
+ - Comparaissans des deux diagrammes espaces temps
  
 Le but de cette MPR=0% et un MPR=100% 
  
@@ -179,8 +183,10 @@ Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact s
 
 Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa limite en fonctionne de la demande. Ainsi dans cette partie, il est demande de:
 
- - <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau
- - <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant
+ - <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau. Vous pourrait prendre en exemple MPR=[0%,10%,30%,50%,75%,100%]
+ - <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant 
+
+Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les demandes et le taux
 
 <h2 align="center">Partie II : Modification des facteurs</h2>
 
