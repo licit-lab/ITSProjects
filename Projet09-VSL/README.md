@@ -4,14 +4,14 @@
 <a href = "https://github.com/licit-lab/ITSProjects/blob/415797d33cd19d347c11a93686661d55a7af4943/Projet09-VSL/SUMO_installation/notice_installation"> Pour installer SUMO et vérifier le bon fonctionnement des simulations <a/>
 ## Introduction 
 
-Des incidents sur le réseau (accidents, conditions météréologiques dégradées, etc) ou des contraintes propores à celui-ci (réduction du nombre de voies, voies d'insertion) peuvent entrainer des conditions de trafic dégradés voir des ondes de congestion qui se propagent sur le réseau. Pour contrer ces phénomènes, les gestionnaires d'infrastructures mettent en place des stratégies de régulation de trafic qui consistent en 1) détecter un évènement sur le réseau, 2) le caractériser et 3) anticiper sa propagation spatiale et temporelle.  Les stratégies de régulations ont pour objectif d'améliorer le trafic, que ce soit en terme d'efficacité (réduction des temps de parcours des usagers, augmentation du flux de véhicules, etc), de sécurité (en réduisant les différences de vitesses entre les véhicules par exemple) ou d'environnement (en réduisant les émissions de CO2 par exemple). 
+Des incidents sur le réseau (accidents, conditions météréologiques dégradées, etc) ou des contraintes propres à celui-ci (réduction du nombre de voies, voie d'insertion) peuvent entrainer des conditions de trafic dégradées voir des ondes de congestion qui se propagent sur le réseau. Pour contrer ces phénomènes, les gestionnaires d'infrastructures mettent en place des stratégies de régulation de trafic qui consistent à 1) détecter un évènement sur le réseau, 2) le caractériser et 3) anticiper sa propagation spatiale et temporelle.  Les stratégies de régulations ont pour objectif d'améliorer le trafic, que ce soit en terme d'efficacité (réduction des temps de parcours des usagers, augmentation du flux de véhicules, etc), de sécurité (en réduisant les différences de vitesses entre les véhicules par exemple) ou d'environnement (en réduisant les émissions de CO2 par exemple). 
  
   
 <p align="center">
   <img src="https://github.com/licit-lab/ITSProjects/blob/bc9f7715036f5477dbb52d34f2447863a14cb2a6/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png" width="800">
 </p>
 
-De nouvelles stratégies de contrôle, associés au développement des Systèmes de Transport Intelligent (STI) et notamment des Véhicules Connectés (VC), ont été développé à partir des années 90. Les systèmes de régulation dynamiques de vitesses font ainsi partie des plus populaires d'entre elles dans la littérature. Ils  consistent à:
+De nouvelles stratégies de contrôle, associés au développement des Systèmes de Transport Intelligent (STI) et notamment des Véhicules Connectés (VC), ont été développées à partir des années 90. Les systèmes de régulation dynamiques de vitesses font ainsi partie des plus populaires d'entre elles dans la littérature. Ils  consistent à:
   1) détecter dynamiquement une zone de congestion sur une voie rapide
   2) donner une consigne de limitation de vitesse en amont de cette zone.
   
@@ -19,23 +19,23 @@ Le but est ainsi de limiter le flux arrivant sur la zone de congestion pour limi
 
 Les systèmes déterminent donc à partir de quelle distance et pour combien de temps il est nécessaire que les véhicules appliquent la limitation de vitesse pour que la congestion soit dissipée lorsque ceux-ci arrivent sur la zone de ralentissement.
  
-Si en premier lieu, ils reposaient sur les données issus des boucles électromagnétiques pour trouver cette distance et ce temps et sur les Panneaux à Messages Variables (PMV) pour délivrer le contrôle, on voit désormais aparaître des systèmes reposant entièrement sur les VC et la communication I2V( Infrastructure-Véhicule) (à l'aide d'Unités de Bords de Route (UBR)).
+Si en premier lieu, ces systèmes reposaient sur les données issus des boucles électromagnétiques pour trouver la distance et le temps optimum de limitation de vitesse et sur les Panneaux à Messages Variables (PMV) pour délivrer le contrôle, certains reposent désormaisne  entièrement sur les VC et la communication I2V( Infrastructure-Véhicule) (à l'aide d'Unités de Bords de Route (UBR)).
 
 <p align="center">
   <img src="https://github.com/licit-lab/ITSProjects/blob/d1a9542a1551a1d77dae1b51503c3b283d9c1ec0/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.31.13.png" width="600">
 </p>
 
-Ici, on s'intéressera à l'impact des VC pour délivrer le contrôle.
+Ici, on ne s'intéressera qu'à l'impact des VC pour délivrer le contrôle. 
   
 ## Objectifs du projet
 Le projet a pour objectifs : 
-  1) Prendre en main les outils de simulation SUMO/TRACI
-  2) Implémenter un système de régulation dynamique des vitesses simplifié et où le contrôle est basé sur les véhicules connectés
-  3) Appréhender la sensibilité d'un tel système au taux de pénétration (nombre de véhicules connectés/nombre total de véhicules
-  4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en assurer une inédite et plus efficace.
+  1) Prendre en main les outils de simulation SUMO/TRACI;
+  2) Implémenter un système de régulation dynamique des vitesses simplifié et où le contrôle est basé sur les véhicules connectés;
+  3) Appréhender la sensibilité d'un tel système au taux de pénétration (nombre de véhicules connectés/nombre total de véhicules;
+  4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en implémenter une nouvelle, inédite et plus efficace.
 
 ## TP 
-Présentation du réseau.
+Le réseau d'étude est présenté dans le schéma ci-dessous.
 <p align="center">
   <img src="https://github.com/licit-lab/ITSProjects/blob/eccc2893c04f549d760106183d820d9bf9614af8/Projet09-VSL/images/scenario.png">
 </p>
