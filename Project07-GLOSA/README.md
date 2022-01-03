@@ -209,9 +209,9 @@ Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnée
 
 Ci dessous vous trouverez quelques sources utiles au traitement du projet:
 
-- https://sumo.dlr.de/docs/netconvert.html
-- https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf
-- https://sumo.dlr.de/docs/Simulation/GLOSA.html
+- <a href="https://sumo.dlr.de/docs/netconvert.html">Netconvert</a> sur SUMO
+- <a href="https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf">Cerema</a> Evaluation de la capacité aux feux retour d'observations en France: De la phase conception à l'épreuve du terrain
+- <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a> sur SUMO
 
  
  
