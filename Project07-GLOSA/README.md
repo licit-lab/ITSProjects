@@ -162,7 +162,7 @@ Penetration Rate of 100% of Connected Vehicles
  
  <b>Question 1</b>
  
-Pour cette question, il vous sera demander d'évaluer et de comporer la mise en place du GLOSA pour deux scénarios, un scénario avec MPR=0% et un MPR=100%.
+Pour cette question, il vous sera demander d'évaluer et de comparer la mise en place du GLOSA pour deux scénarios, un scénario avec MPR=0% et un MPR=100%.
  
 Pour l'analyse globale, vous devrait évaluer la différents en terme de:
  - Temps de parcours cumulé
@@ -171,11 +171,8 @@ Pour l'analyse globale, vous devrait évaluer la différents en terme de:
  - Volume des vehicules l'arrêt et le pourcentage de véhicules à l'arret en fonction du taux de pernettration des VAC
  - Comparaissans des deux diagrammes espaces temps
  
-Le but de cette MPR=0% et un MPR=100% 
+Vous pourrez utiliser le jupyter notebook pour vous aider dans les démarches et les figures disponibles. Neamoins, la librairie plotly n'est qu'un outil, libre à vous d'en utiliser un autre. Egalement, les figures mise dans ce juypternotebook n'est pas forcement exactement les mêmes que demandé.
  
-Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact sur le traffic et l'impact sur les emessions 
- 
-
  
 </div>
 
@@ -184,25 +181,29 @@ Deux points au minimun sont attendus pour cette partie, l'analyse sur l'impact s
 Une des questions légitimes sur la mise en place des GLOSA est de connaitre sa limite en fonctionne de la demande. Ainsi dans cette partie, il est demande de:
 
  - <b>Q2: </b> A demande total fixe, evaluter l'influence d'un taux de VAC augmentant sur le reseau. Vous pourrait prendre en exemple MPR=[0%,10%,30%,50%,75%,100%]
- - <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant 
+ - <b>Q3: </b> A taux de VAC dans la flottes de vehicles évaluter les limites du GLOSA pour une demande augmentant. Par exemple prendre des demandes valuant d=[500,1000,1500,2000,2500,3000]
 
-Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les demandes et le taux
+Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les demandes et le taux de penetration des véhicules pour certaines valeurs comme la queue
 
 <h2 align="center">Partie II : Modification des facteurs</h2>
 
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demander de:
 
- - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA.
- - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. 
+ - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA. Par exemple [0,200,400,600,800,1000]
+ - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeur du facteur de vitesse du conducteur lors de la communication du GLOSA. Par exemple [1,1.1,1.2,1.3,1.4,1.5] 
+
+Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les distances et les facteur de vitesse
+
 
 <h2 align="center">Partie II : Modification du reseau</h2>
 
 Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du reseau étudiant. Ainsi dans cette partie ouverte, il est demander de:
 
- - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau.
- - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux. 
+ - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau. Par exemple nombre de voie=[1,2,3,4]
+ - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux.  Par exemple des cycles=[30,60,90,120,150]
 
+Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les nombre de voie et les facteur de cycles
 
 <h2 align="center">Sources utiles</h2>
 
