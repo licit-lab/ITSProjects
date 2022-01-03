@@ -2,32 +2,32 @@
 <h1 align="center">Description du projet</h1>
 
 
-<h2 align="center">Analyse des impacts du GLOSA sur le traffic</h2>
+<h2 align="center">Analyse des impacts du GLOSA sur le trafic</h2>
 
 <div align="justify">
-<br/> Le principale objectif de ce proket est de comprendre l'impactes du GLOSA sur le traffic, notamment à l'approche d'un feux de circulation dans un millieu urbain. 
+<br/> Le principal objectif de ce projet est de comprendre l'impactes du GLOSA sur le trafic, notamment à l'approche d'un feu de circulation dans un milieu urbain. 
 </div>
 
 <h2 align="center" id="GLOSA?">Qu'est-ce que le GLOSA ?</h2>
 <br/> 
 <div align="justify">
-Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communication infrastructure-to-vehicles (I2V) qui permets d'envoier des informations rélatifs à l'état du feux de circulation vers les véhicules connectées. L'objectif de cette communication est d'utiliser les informations sur le temps des feux de circulation pour optimiser la vitesse des véhicules à leurs passages [1]. Ce cas d'utilisation des ITS n'est pas une problèmatiques récentes [2,3,4] et fait déjà integréer dans certaines villes [5]. 
+Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un système de communication infrastructure-to-vehicles (I2V) qui permets d'envoyer des informations relatifs à l'état du feu de circulation vers les véhicules connectés. L'objectif de cette communication est d'utiliser les informations sur le temps des feux de circulation pour optimiser la vitesse des véhicules à leurs passages [1]. Ce cas d'utilisation des ITS n'est pas une problématique récentes [2,3,4] et fait déjà intégrer dans certaines villes [5].
 </div>
 <br/>
 <img src="https://s3-prod.autonews.com/OEM06_301239829_AR_-1_BOMDZEXWACYH.jpg">
 <h3 align="center">Comment ça marche ?</h3>
 <br/> 
 <div align="justify">
-Le GLOSA informe le conducteur du véhicle de la présence d'un feux de circulation en approche en lui informant de l'état du feux, il se peut que l'état soit différents à chaque voie. Deux cas peuvent se produire, soit le feux est rouge est dans ce cas le feux de circulation indique si oui ou non il pourra passer à la phase vert pour un changement de vitesse donnée. Soit la phase est déjà verts et dans ce cas, l'information concernet si oui ou non le véhicule pourra passer et selon une vitesse donnée. 
+Le GLOSA informe le conducteur du véhicule de la présence d'un feu de circulation en approche en lui informant de l'état du feu, il se peut que l'état soit différent à chaque voie. Deux cas peuvent se produire, soit le feu est rouge est dans ce cas le feu de circulation indique si oui ou non, il pourra passer à la phase verte pour un changement de vitesse donnée. Soit la phase est déjà verte et dans ce cas, l'information concerne si oui ou non le véhicule pourra passer et selon une vitesse donnée. 
 
-Mathématique, il est possible de le traduire selon la formulation du mono-segment de <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
+Mathématiquement, il est possible de le traduire selon la formulation du mono-segment de <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
 
 "Soit un segment <i>s</i> de longueur <i>l</i>  connue ainsi que la vitesse minimal et maximale sur le segment [v<sup>min</sup>,v<sup>max</sup>] et l'horaire des feux de circulation <i>t<sub>s</sub></i> à la fin du segment qui définie l'état du feux de circulation à l'instant <i>t</i>, <i>t<sub>s</sub>(t)={GREEN,YELOW,RED}</i>. Le but est de trouver la vitesse minimal <i>v</i> pour que le vehicules passer au vert":
  
 <p align="center"> 
   <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-48%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
   </p>
-On peut generaliser cette approches par des reseaux de multi-segment:
+On peut generaliser cette approche par des reseaux de multi-segment:
   
 "Soit une liste de n segment S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leurs longueur l<sub>i</sub> où 1<i<n, le vitesse minimun et maximun du segment i, [v<sub>i</sub><sup>min</sup>,v<sub>i</sub><sup>max</sup>], sont connue. L'horraire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseiller sur tout les segment, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
 
@@ -35,14 +35,17 @@ On peut generaliser cette approches par des reseaux de multi-segment:
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-40%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
    </p>
 
-Usuellement on peut traduire cette notion avec les images 1 et 2. La premier image montre un scenario où une voiture s'approche d'un feu de circulation n'étant pas équiper d'un GLOSA. Comme aucune information n'est transmisse au conducteur, la vitesse qu'il m'entiends l'obligera à s'arreter au vu rouge et redemarrer lorsque que le cycle repasse au vert. Dans le deuxieme scénario, on suppose cette fois que la voiture et le feux de circulation sont équipe de systèmes GLOSA et que le feux de circulation peut transmettre cette information à un distance fixe (double fleche communication). Tant que le vehicule ne se trouve pas dans cette zone, il "mientient" sa vitesse en espèrant passer au vert. Lorsqu'il rentre dans la zones de communication, le feux de circulation envoie une information indiquant la vitesse à adopter, en laucurence ralentir dans ce cas. Avec la nouvelle vitesse adopter, le conducteur n'aura pas besoin de s'arreter et pourra continuer son iterraire après avoir passer le feux de circulation.
+
+Usuellement, on peut traduire cette notion avec les images 1 et 2. La première image montre un scénario où une voiture s'approche d'un feu de circulation n'étant pas équipé d'un GLOSA. Comme aucune information n'est transmisse au conducteur, la vitesse qu'il maintient l'obligera a s'arrêter au vu rouge et redémarrer lorsque que le cycle repasse au vert. Dans le deuxième scénario, on suppose cette fois que la voiture et le feu de circulation sont l'équipe de systèmes GLOSA et que le feu de circulation peut transmettre cette information à un distance fixe (double flèche communication). Tant que le véhicule ne se trouve pas dans cette zone, il "maintient" sa vitesse en espérant passer au vert. Lorsqu'il rentre dans la zone de communication, le feu de circulation envoie une information indiquant la vitesse à adopter en l'occurrence : ralentir dans ce cas. Avec la nouvelle vitesse adopter, le conducteur n'aura pas besoin de s'arrêter et pourra continuer son itinéraire après avoir passé le feu de circulation.
+
  
 <p align="center">   
  <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_sans_glosa.png" width="450">
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_active.png" width="450">
    </p>
  
- De manière similaire les deux images suivantes representes le cas au le feux de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesses vien évidamment. 
+
+De manière similaire, les deux images suivantes représentent le cas au le feu de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesses vient évidemment. 
  
 <p align="center">   
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_vert.png" width="450">
@@ -50,19 +53,19 @@ Usuellement on peut traduire cette notion avec les images 1 et 2. La premier ima
  
  
   
-De manière plus complexe il est possible de formuler cette problèmatique dans l'obtique d'un étude de voie verte (ref ?).
+De manière plus complexe, il est possible de formuler cette problématique dans l'optique d'une étude de voie verte (ref ?).
 </div>
-<h3 align="center">Problèmatique du sujet?</h3>
+<h3 align="center">Problématique du sujet ?</h3>
 <br/> 
 <div align="justify">
-Un enjeux de la mise en place de ce cas d'utilisations sucistes quelques questionnement. Quelles est sont impactes sur le traffic ? Ce type permets t-il de réduire la congestion au bords d'un feux de circulation ? Peut-il reduire les émissions relatif au traffic ? ect... Toutes ces questions sont au centre du GLOSA et le but de ce sujet et d'analyser ces impacts. Avant d'aborder les préceptives de recherches, nous allons voir comme elle s'ingre dans l'outil de simulation SUMO (Simulation of Urban MObility).
+Un enjeu de la mise en place de ce cas d'utilisations suscite quelque questionnement. Quels est sont impactés sur le trafic ? Ce type, permet-il de réduire la congestion au bord d'un feu de circulation ? Peut-il réduire les émissions relatives au trafic ? ect... Toutes ces questions sont au centre du GLOSA et le but de ce sujet et d'analyser ces impacts. Avant d'aborder les préceptes de recherches, nous allons voir comme elle s'intègre dans l'outil de simulation SUMO (Simulation of Urban MObility).
 </div>
 
 
 <h2 align="center" id="GLOSASUMO">GLOSA dans SUMO</h2>
 <br/> 
 <div align="justify">
-Contrairement à d'autres systèmes de transport intelligent qui nécessite l'utilisation de <a href="https://sumo.dlr.de/docs/TraCI.html">TraCi</a> dans SUMO, des modules de <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a>  ont été créé dans SUMO depuis la version 1.9.1. Comme nous l'avons vu dans la section <i><a href="#GLOSA?">Qu'est-ce que le GLOSA ?</a></i>, la fonction GLOSA informe les véhicles de deux manière. La première manière est une information de realentissement, dans ce cas l'infrastructure informe si le vehicule doit ralentir au vu d'un arret par faute de temps ou pour un passage lors d'un changement de phase. La deuxième manière est une information d'accélération, le feux de circulation informe le véhicles qu'il doit augmenter sa vitesse pour pouvoir passer au vert. Pour mettre en place ce module, il faut à la fois équiper les véhicles et les feux de circulation ciblé. 
+Contrairement à d'autres systèmes de transport intelligent qui nécessite l'utilisation de <a href="https://sumo.dlr.de/docs/TraCI.html">TraCi</a> dans SUMO, des modules de <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a>  ont été créé dans SUMO depuis la version 1.9.1. Comme nous l'avons vu dans la section <i><a href="#GLOSA?">Qu'est-ce que le GLOSA ?</a></i>, la fonction GLOSA informe les véhicles de deux manières. La première manière est une information de ralentissement, dans ce cas l'infrastructure informe si le vehicule doit ralentir au vu d'un arret par faute de temps ou pour un passage lors d'un changement de phase. La deuxième manière est une information d'accélération, le feux de circulation informe le véhicle qu'il doit augmenter sa vitesse pour pouvoir passer au vert. Pour mettre en place ce module, il faut à la fois équiper les véhicles. 
 </div>   
 
 <h3 align="center">Equipement des véhicles</h3>
