@@ -43,7 +43,7 @@ def activate_VSL_system(position1, position2, time1, time2, limitated_veh_list, 
                 traci.vehicle.setMaxSpeed(veh, 33.11)
                 limitated_veh_list.remove(veh)
 
-        if step>=1200:
+        if step>=time2:
             for veh in limitated_veh_list:
                 traci.vehicle.setMaxSpeed(veh, 33.11)
                 limitated_veh_list.remove(veh)
