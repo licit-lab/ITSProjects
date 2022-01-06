@@ -45,6 +45,7 @@ Le réseau d'étude est présenté dans le schéma ci-dessous.
   
 ## Outils pour traiter les fichiers de sortie
 <a href = "https://github.com/licit-lab/ITSProjects/blob/13b5563437d8c0f3f47b7006e9955b382b85f398/Projet09-VSL/Outils_analyses.ipynb">  Pour vous aider à analyser les fichiers de sortie, vous pouvez aller voir ici. <a/>
+Pour convertir vos fichiers xml en fichiers csv, vous pouvez utiliser la commande suivante dans votre terminal : python tools/xml/xml2csv.py nom_fichier.xml
  
 ## Liens utiles 
 <a href ="https://sumo.dlr.de/docs/"> Pour aller voir la documentation SUMO <a/>  
