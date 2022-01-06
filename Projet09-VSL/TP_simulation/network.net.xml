@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 12/08/21 09:49:42 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\eleon\OneDrive%20-%20entpe.fr\Documents\these\wetransfer_sumo_2021-11-09_1417\3500insert\CV_p.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\eleon\OneDrive%20-%20entpe.fr\Documents\these\wetransfer_sumo_2021-11-09_1417\3500insert\CV_p.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-2000.00,-500.94,11000.00,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":2vers1_0" function="internal">
+        <lane id=":2vers1_0_0" index="0" speed="17.77" length="3.50" shape="8474.47,-8.52 8475.46,-8.21 8476.16,-8.04 8476.87,-7.98 8477.91,-7.97"/>
+    </edge>
+    <edge id=":2vers1_1" function="internal">
+        <lane id=":2vers1_1_0" index="0" speed="36.10" length="3.63" shape="8474.28,-4.80 8477.91,-4.77"/>
+        <lane id=":2vers1_1_1" index="1" speed="36.10" length="3.63" shape="8474.28,-1.60 8477.91,-1.57"/>
+    </edge>
+    <edge id=":debutE_0" function="internal">
+        <lane id=":debutE_0_0" index="0" speed="36.11" length="0.10" shape="1500.00,-4.80 1500.00,-4.80"/>
+        <lane id=":debutE_0_1" index="1" speed="36.11" length="0.10" shape="1500.00,-1.60 1500.00,-1.60"/>
+    </edge>
+    <edge id=":gneJ0_0" function="internal">
+        <lane id=":gneJ0_0_0" index="0" speed="36.11" length="8.27" shape="8546.20,-8.06 8548.66,-7.57 8550.20,-6.47 8551.74,-5.37 8554.21,-4.87"/>
+        <lane id=":gneJ0_0_1" index="1" speed="36.11" length="8.27" shape="8546.21,-4.86 8554.21,-4.87"/>
+        <lane id=":gneJ0_0_2" index="2" speed="36.11" length="8.27" shape="8546.21,-1.66 8554.21,-1.67"/>
+    </edge>
+
+    <edge id="E" from="debutE" to="2vers1" priority="1" length="7000.00">
+        <lane id="E_0" index="0" speed="36.10" length="7000.00" shape="1500.00,-4.80 8474.28,-4.80"/>
+        <lane id="E_1" index="1" speed="36.10" length="7000.00" shape="1500.00,-1.60 8474.28,-1.60"/>
+    </edge>
+    <edge id="R" from="debutR" to="2vers1" priority="2" spreadType="center" length="1500.00">
+        <lane id="R_0" index="0" speed="36.10" length="1500.00" shape="7000.00,-500.94 8474.47,-8.52"/>
+    </edge>
+    <edge id="debutP" from="debut" to="debutE" priority="-1" length="3500.00">
+        <lane id="debutP_0" index="0" speed="36.11" length="3500.00" shape="-2000.00,-4.80 1500.00,-4.80"/>
+        <lane id="debutP_1" index="1" speed="36.11" length="3500.00" shape="-2000.00,-1.60 1500.00,-1.60"/>
+    </edge>
+    <edge id="deuxvoies" from="2vers1" to="gneJ0" priority="-1">
+        <lane id="deuxvoies_0" index="0" speed="36.10" length="68.30" acceleration="1" shape="8477.91,-7.97 8546.20,-8.06"/>
+        <lane id="deuxvoies_1" index="1" speed="36.10" length="68.30" shape="8477.91,-4.77 8546.21,-4.86"/>
+        <lane id="deuxvoies_2" index="2" speed="36.10" length="68.30" shape="8477.91,-1.57 8546.21,-1.66"/>
+    </edge>
+    <edge id="unevoie" from="gneJ0" to="gneJ1" priority="-1">
+        <lane id="unevoie_0" index="0" speed="36.11" length="2445.79" shape="8554.21,-4.87 11000.00,-4.80"/>
+        <lane id="unevoie_1" index="1" speed="36.11" length="2445.79" shape="8554.21,-1.67 11000.00,-1.60"/>
+    </edge>
+
+    <junction id="2vers1" type="priority" x="8500.00" y="0.00" incLanes="R_0 E_0 E_1" intLanes=":2vers1_0_0 :2vers1_1_0 :2vers1_1_1" shape="8477.92,0.03 8477.90,-9.57 8476.80,-9.59 8476.41,-9.63 8476.03,-9.71 8475.58,-9.84 8474.98,-10.04 8473.97,-7.01 8474.28,-6.40 8474.28,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="debut" type="dead_end" x="-2000.00" y="0.00" incLanes="" intLanes="" shape="-2000.00,0.00 -2000.00,-6.40"/>
+    <junction id="debutE" type="priority" x="1500.00" y="0.00" incLanes="debutP_0 debutP_1" intLanes=":debutE_0_0 :debutE_0_1" shape="1500.00,0.00 1500.00,-6.40 1500.00,0.00">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="debutR" type="dead_end" x="7000.00" y="-500.94" incLanes="" intLanes="" shape="6999.49,-499.42 7000.51,-502.46"/>
+    <junction id="fin" type="dead_end" x="10500.00" y="0.00" incLanes="" intLanes="" shape="10500.00,0.00"/>
+    <junction id="gneJ0" type="priority" x="8550.21" y="-0.07" incLanes="deuxvoies_0 deuxvoies_1 deuxvoies_2" intLanes=":gneJ0_0_0 :gneJ0_0_1 :gneJ0_0_2" shape="8554.21,-0.07 8554.21,-6.47 8551.17,-7.30 8549.23,-8.84 8547.99,-9.43 8546.20,-9.66 8546.21,-0.06">
+        <request index="0" response="010" foes="010" cont="0"/>
+        <request index="1" response="000" foes="001" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="gneJ1" type="dead_end" x="11000.00" y="0.00" incLanes="unevoie_0 unevoie_1" intLanes="" shape="11000.00,-6.40 11000.00,-0.00"/>
+    <junction id="point_cv" type="dead_end" x="9000.00" y="0.00" incLanes="" intLanes="" shape="9000.00,0.00"/>
+
+    <connection from="E" to="deuxvoies" fromLane="0" toLane="1" via=":2vers1_1_0" dir="s" state="M"/>
+    <connection from="E" to="deuxvoies" fromLane="1" toLane="2" via=":2vers1_1_1" dir="s" state="M"/>
+    <connection from="R" to="deuxvoies" fromLane="0" toLane="0" via=":2vers1_0_0" dir="s" state="M"/>
+    <connection from="debutP" to="E" fromLane="0" toLane="0" via=":debutE_0_0" dir="s" state="M"/>
+    <connection from="debutP" to="E" fromLane="1" toLane="1" via=":debutE_0_1" dir="s" state="M"/>
+    <connection from="deuxvoies" to="unevoie" fromLane="0" toLane="0" via=":gneJ0_0_0" dir="s" state="m"/>
+    <connection from="deuxvoies" to="unevoie" fromLane="1" toLane="0" keepClear="0" via=":gneJ0_0_1" dir="s" state="M"/>
+    <connection from="deuxvoies" to="unevoie" fromLane="2" toLane="1" keepClear="0" via=":gneJ0_0_2" dir="s" state="M"/>
+
+    <connection from=":2vers1_0" to="deuxvoies" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2vers1_1" to="deuxvoies" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":2vers1_1" to="deuxvoies" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":debutE_0" to="E" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":debutE_0" to="E" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ0_0" to="unevoie" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ0_0" to="unevoie" fromLane="1" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ0_0" to="unevoie" fromLane="2" toLane="1" dir="s" state="M"/>
+
+</net>
