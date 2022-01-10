@@ -23,7 +23,7 @@ Les systèmes déterminent donc à partir de quelle distance et pour combien de 
 Si en premier lieu, ces systèmes reposaient sur les données issus des boucles électromagnétiques pour trouver la distance et le temps optimum de limitation de vitesse et sur les Panneaux à Messages Variables (PMV) pour délivrer le contrôle, certains reposent désormaisne  entièrement sur les VC et la communication I2V( Infrastructure-Véhicule) (à l'aide d'Unités de Bords de Route (UBR)).
 
 <p align="center">
-  <img src=https://github.com/licit-lab/ITSProjects/blob/a3af837f9c2245a544c9112ec4cdcdc26ddaf705/Projet09-VSL/images/scenarioITS.png width="600">
+  <img src=https://github.com/licit-lab/ITSProjects/blob/05e6a1fa86d3e3550ce92b921415096289104123/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.31.13.png width="600">
 </p>
 
 Ici, on ne s'intéressera qu'à l'impact des VC pour délivrer le contrôle. 
@@ -38,7 +38,7 @@ Le projet a pour objectifs :
 ## TP 
 Le réseau d'étude est présenté dans le schéma ci-dessous.
 <p align="center">
-  <img src=https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/images/scenarioITS.png>
+  <img src=https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/images/scenarioITS.png width="600">
 </p>
   
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. <a/> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
