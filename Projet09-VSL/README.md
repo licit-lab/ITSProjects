@@ -8,8 +8,9 @@ Des incidents sur le réseau (accidents, conditions météréologiques dégradé
  
   
 <p align="center">
-  <img src="Projet09-VSL/images/Capture d’écran 2021-12-15 à 13.18.00.png" width="800">
+  <img src=" https://github.com/licit-lab/ITSProjects/blob/ee12aa059e0ff7ddcdd0b11ed0bda60bc9350e1d/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png" width="800">
 </p>
+
 
 De nouvelles stratégies de contrôle, associés au développement des Systèmes de Transport Intelligent (STI) et notamment des Véhicules Connectés (VC), ont été développées à partir des années 90. Les systèmes de régulation dynamiques de vitesses font ainsi partie des plus populaires d'entre elles dans la littérature. Ils  consistent à:
   1) détecter dynamiquement une zone de congestion sur une voie rapide
