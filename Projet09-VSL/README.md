@@ -8,7 +8,7 @@ Des incidents sur le réseau (accidents, conditions météréologiques dégradé
  
   
 <p align="center">
-  <img src=" https://github.com/licit-lab/ITSProjects/blob/ee12aa059e0ff7ddcdd0b11ed0bda60bc9350e1d/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png" width="800">
+  <img src=https://github.com/licit-lab/ITSProjects/blob/ee12aa059e0ff7ddcdd0b11ed0bda60bc9350e1d/Projet09-VSL/images/Capture%20d%E2%80%99%C3%A9cran%202021-12-15%20%C3%A0%2013.18.00.png width="800">
 </p>
 
 
@@ -23,7 +23,7 @@ Les systèmes déterminent donc à partir de quelle distance et pour combien de 
 Si en premier lieu, ces systèmes reposaient sur les données issus des boucles électromagnétiques pour trouver la distance et le temps optimum de limitation de vitesse et sur les Panneaux à Messages Variables (PMV) pour délivrer le contrôle, certains reposent désormaisne  entièrement sur les VC et la communication I2V( Infrastructure-Véhicule) (à l'aide d'Unités de Bords de Route (UBR)).
 
 <p align="center">
-  <img src="https://github.com/licit-lab/ITSProjects/blob/a3af837f9c2245a544c9112ec4cdcdc26ddaf705/Projet09-VSL/images/scenarioITS" width="600">
+  <img src=https://github.com/licit-lab/ITSProjects/blob/a3af837f9c2245a544c9112ec4cdcdc26ddaf705/Projet09-VSL/images/scenarioITS.png width="600">
 </p>
 
 Ici, on ne s'intéressera qu'à l'impact des VC pour délivrer le contrôle. 
@@ -38,7 +38,7 @@ Le projet a pour objectifs :
 ## TP 
 Le réseau d'étude est présenté dans le schéma ci-dessous.
 <p align="center">
-  <img src="https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/images/scenarioITS.png">
+  <img src=https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/images/scenarioITS.png>
 </p>
   
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. <a/> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
