@@ -38,7 +38,7 @@ Le projet a pour objectifs :
 ## TP 
 Le réseau d'étude est présenté dans le schéma ci-dessous.
 <p align="center">
-  <img src=https://github.com/licit-lab/ITSProjects/blob/05e6a1fa86d3e3550ce92b921415096289104123/Projet09-VSL/images/scenarioITS.png width="500">
+  <img src=https://github.com/licit-lab/ITSProjects/blob/05e6a1fa86d3e3550ce92b921415096289104123/Projet09-VSL/images/scenarioITS.png width="700">
 </p>
   
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. <a/> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
