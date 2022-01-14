@@ -3,6 +3,14 @@
 ## Préambule : Installation de Sumo
 Pour installer SUMO et vérifier le bon fonctionnement des simulations, cliquer
 <a href = "https://github.com/licit-lab/ITSProjects/blob/415797d33cd19d347c11a93686661d55a7af4943/Projet09-VSL/SUMO_installation/notice_installation">  ici </a>
+
+Au terme de l'installation de SUMO, n'oubliez pas de la tester. 
+Pour ce faire, procédez par étape en s'appuyant sur le contenu du dossier SUMO_installation :
+1. Ouvrir avec NetEdit le fichier `init_network.net.xml`, il fournit une description du réseau routier et de l'agencement des routes
+2. Vérifier le bon fonctionnement de SUMO en lançant la simulation contenue dans le fichier `init_simulation.sumocfg`. Il suffit d'ouvrir le fichier de simualtion depuis l'interface GUI de SUMO.
+3. Vérifier le bon fonctionnement de TraCI en exécutant le fichier Python `TP_ITS.py`. Vous pouvez alors observer que l'interface SUMO s'active et que les étapes de simulation défilent dans l'invite de commande de SUMO ou même celle de votre machine, si vous exécutez le fichier python depuis votre console de commande (```python your/path/to/working/directory/SUMO_installation/TP_ITS.py```)
+
+
 ## Introduction 
 
 Des incidents sur le réseau (accidents, conditions météréologiques dégradées, etc) ou des contraintes propres à celui-ci (réduction du nombre de voies, voie d'insertion) peuvent entrainer des conditions de trafic dégradées, voire des ondes de congestion qui se propagent sur le réseau. Pour contrer ces phénomènes, les gestionnaires d'infrastructures mettent en place des stratégies de régulation de trafic qui consistent à 
@@ -39,7 +47,9 @@ Le projet a pour objectifs :
   1) Prendre en main les outils de simulation SUMO/TRACI;
   2) Implémenter un système de régulation dynamique des vitesses simplifié et où le contrôle est basé sur les véhicules connectés;
   3) Appréhender la sensibilité d'un tel système au taux de pénétration (nombre de véhicules connectés/nombre total de véhicules;
-  4) Explorer le potentiel des véhicules connectés pour 1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 1bis) combiner différentes stratégies de contrôle pour en implémenter une nouvelle, inédite et plus efficace.
+  4) Explorer le potentiel des véhicules connectés pour 
+      1) assurer l'efficacité du système de contrôle même à taux de pénétration réduit 
+      2) ou combiner différentes stratégies de contrôle pour en implémenter une nouvelle, inédite et plus efficace.
 
 ## TP 
 Le réseau d'étude est présenté dans le schéma ci-dessous.
@@ -49,7 +59,7 @@ Le réseau d'étude est présenté dans le schéma ci-dessous.
   
 <a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. </a> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
 
-ous pouvez récupérer les fichiers de simulation et le  script python à compléter 
+Vous pouvez récupérer les fichiers de simulation et le  script python à compléter 
 <a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> ici. </a> Votre script python complété est également attendu dans votre rendu final.
   
 ## Outils pour traiter les fichiers de sortie
