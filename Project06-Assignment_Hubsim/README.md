@@ -10,4 +10,4 @@ The lab is composed of 2 main steps:
 
 This Practical Lab only makes use of the [HUBSIM simulation platform](https://hubsim.neovya.fr/network) with a web interface. 
 
-The instructions are available on this [HTML page](http://htmlpreview.github.io/?HUBSIM_Sensitivity2TT_V1.html).
+The instructions are available on this [HTML page](http://htmlpreview.github.io/?https://raw.githubusercontent.com/licit-lab/ITSProjects/dev/Project06-Assignment_Hubsim/HUBSIM_Sensitivity2TT_V1.html).
