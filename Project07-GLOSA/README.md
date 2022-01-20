@@ -120,21 +120,21 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
  </ul>
 
  <ul>
-  <dd> Cette commande peut être incluse dans les <b>vTypes</b> ou bien directement dans la discription individuelle du véhicule.
+  <dd> Cette commande peut être incluse dans les <b>vTypes</b> ou bien directement dans la discription individuelle du véhicule. L'avantage de cette approche, est qu'elle permet de cibler le type de véhicule ayant un équipement.
   </dd> 
   </ul> 
 
   <ul>
-    <li>Soit nous ciblons la probabilité d'insertion d'un véhicule de type GLOSA, en précisant uniquement la probabilité qu'un tel véhicule apparaisse sur le réseau. La compétence GLOSA pourra alors être ajoutée à n'importe quel type de véhicule lors de son apparition sur le réseau routier de SUMO. Il n'est dès lors pas nécessair de modifier les fichiers d'entrée et de configuration du scénario de SUMO. Dans un tel cas, il faut spécifier l'option de commande suivante lors du lancement de la simulation depuis le terminal de commande:
+    <li>Soit nous ciblons la probabilité d'insertion d'un véhicule de type GLOSA, en précisant uniquement la probabilité qu'un tel véhicule apparaisse sur le réseau. La compétence GLOSA pourra alors être ajoutée à n'importe quel type de véhicule lors de son apparition sur le réseau routier de SUMO. Il n'est dès lors pas nécessaire de modifier les fichiers d'entrée et de configuration du scénario de SUMO. Dans un tel cas, il faut spécifier l'option de commande suivante lors du lancement de la simulation depuis le terminal de commande:
     </li>
     <br/>
     
   ```
-  --device.fcd.probability 100
+  --device.glosa.probability 100
   ```
 </ul>
 <ul>
-  <dd> Ici le 100 illustre que 100% des véhicules sont équipés du GLOSA, pour changer la probabilité, il suffit de changer la valeur du nombre...
+  <dd> Ici le 100 illustre que 100% des véhicules sont équipés du GLOSA, pour changer la probabilité, il suffit de changer la valeur du nombre... L'avantage de cette méthode est quelle permet de construire des fichiers automatiquements sans interventions humain. Elle permet également de repliquer un grand nombre de fois une simulation en changant des paramètres, par exemple en utilisant des boucles dans des fichiers <a href="https://fr.wikihow.com/%C3%A9crire-un-fichier-batch">BACH</a>.
   </dd> 
   </ul> 
 
@@ -143,7 +143,7 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
     <li>D'autres approches existent également, comme l'implantation deterministe ou l'établissement d'une liste d'identifiants des véhicules à équiper lors du lancement de scénario en ligne de commande, mais, pour ce projet, il ne sera pas utile de les utiliser.
     </li>
     </ul>
-A noter que cette approche est similaire pour d'autres équipements en remplacant glosa par l'équipement présent dans SUMO.
+Tout les approches se valent, il suffit de choisir dans un premier temps la quel vous êtes le plus à l'aise d'utiliser. A noter que cette approche est similaire pour d'autres équipements en remplacant glosa par l'<a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">équipement</a> présent dans SUMO.
 </div>  
 
 <br>
@@ -155,7 +155,7 @@ Il existe différentes manières de bâtir une simulation du trafic dans SUMO. L
 
 Pour implémenter le GLOSA dans SUMO, il est possible de modifier le fichier ```.net```, mais ceci peut pertuber et fausser les resultats en cas de mauvaise manipulation. 
 
-Dans notre cas et comme le préconise la documentation de SUMO, nous allons spécifier les paramètres du GLOSA du feux de circulation cible dans un fichier d'entrée additionnel. Pour activer la fonction GLOSA, il suffit de spécifier les paramètres
+Dans notre cas et comme le préconise la documentation de SUMO, nous allons spécifier les paramètres du GLOSA du feux de circulation cible dans un fichier d'entrée additionnel. Pour activer la fonction GLOSA, il suffit de spécifier les paramètres:
 <ul>
   <li>distance de communication, </li>
   <li>id du feux de circulation, et</li>
@@ -170,7 +170,7 @@ On procède alors de la façon suivante:
 </tlLogic>
 ```
 
-Cette approche à l'avantage de cibler le feu de circulation du réseau. Il est possible de le faire directement depuis la commande de simulation. Il est possible de spécifier la distance de communication avec ```--device.glosa.range``` 
+Cette approche à l'avantage de cibler le feu de circulation du réseau. 
 
 <br>
 <br>
@@ -182,9 +182,9 @@ Il existe 4 paramètres GLOSA dans SUMO:
 
   <ul>
     <li>device.glosa.range : spécifier la distance de communication du feux de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par defaut égale à 100 mètres</li>
-    <li>device.glosa.min-seed : indique la vitesse minimun pour effectuer la manoeuvre, il s'applique au paramètre du véhicles et il est par defaut égale à 5m/s soit 18 km/h</li>
+    <li>device.glosa.min-speed : indique la vitesse minimun pour effectuer la manoeuvre, il s'applique au paramètre du véhicles et il est par defaut égale à 5m/s soit 18 km/h</li>
     <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication, il s'applique au paramètre du véhicles et il est par defaut égale à 1.1</li>
-    <li>jmDriveAfterYellowTime : Mouais</li>
+    <li>jmDriveAfterYellowTime : indique la volonté de continuer à rouler au jaune en fonction de la durée de fonctionnement de la phase jaune (par défaut 0). La valeur sera prise en compte lors de la vérification de la faisabilité d'une manœuvre d'accélération</li>
     <br/>
 </div>  
 
@@ -214,17 +214,20 @@ Quelques caractéristiques de la simulation:
  <br/>
 
  <br>
-Définition du TP de PA:  
+  
+  
+Définition du élementaire :
  
-- MPR=0%: the drivers are not connected and do not dispose of information about the current
-traffic conditions, except the information resulting from their expert knowledge (i.e. they know
-about usual conditions): this is equivalent to a Market Penetration Rate (MPR) set to 0%.
+- MPR=0%: les véhicules/conducteurs ne sont pas connectés et ne disposent pas d'informations sur les
+conditions de l'état du feux de cicrulcation, à l'exception des informations résultant de leur expertise (c'est-à-dire qu'ils connaissent
+sur les conditions habituelles) : cela équivaut à un taux de pénétration du marché (MPR) fixé à 0 %.
  
-- MPR=100%: the drivers dispose of updated traffic information broadcasted online (in real-time
-or almost) by a Human-Machine-Interface (HMI). It enables the driver to pick up the best option
-in terms of travel time when he is starting to move. We will assume that all the drivers dispose
-of information in the same way when information is available. It matches with a Market
-Penetration Rate of 100% of Connected Vehicles
+- MPR=100%: les véhicules/conducteurs disposent d'informations sur l'état du feux de circulation. Il permet au véhicule/conducteur de choisir la meilleure option
+en termes de vitesse à l'approche d'un feux de circulation. Nous supposerons que tous les chauffeurs disposent
+de l'information de la même manière lorsque l'information est disponible. Il correspond à un marché
+Taux de Pénétration de 100% des Véhicules Connectés.
+
+
  
  <b>Question 1</b>
  
@@ -250,26 +253,6 @@ Un des enjeux légitimes sur la mise en place du GLOSA est d'identifier son ODD 
  - <b>Question 3: </b> A taux de VAC constant (ie flotte de vehicles connectés identique), évaluer les limites du GLOSA pour une demande augmentant. Par exemple, prendre des demandes évoluant de la façon suivnte d=[500,1000,1500,2000,2500,3000].
 
 Il serait bien dans cette partie de procéder à un plan d'expérience par quadriallage avec, en ordonnée et abscisse, la demande et le taux de pénétration des véhicules, en considérant un ou des indicateurs de performances tels que la remontée de queue de bouchon, etc
-
-<h2 align="center">Partie II : Modification des facteurs</h2>
-
-
-Un des enjeux légitimes sur la mise en places du GLOSA est d'identifier ses limites, notamment vis-à-vis des indices de performances et du comportement du conducteur. Ainsi dans cette partie ouverte, il est demandé de:
-
- - <b>Question 2: </b> À demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes plages de distances de communication du GLOSA. Par exemple, l'activation du GLOSA ne s'opère pas avant [0,200,400,600,800,1000] mètres.
- - <b>Question 3: </b> À demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs du facteur de vitesse du conducteur lors de la communication du GLOSA. Par exemple, considérez les valeurs suivantes [1,1.1,1.2,1.3,1.4,1.5]. À quoi correspondent-elles ? Quelle interprétation physique pouvez vous en faire ? 
-
-Il serait bien dans cette partie de procéder à un plan d'expérience par quadriallage avec, en ordonnée et abscisse, les distances et les facteur de vitesse, en considérant un ou des indicateurs de performances tels que la remontée de queue de bouchon, etc 
-
-
-<h2 align="center">Partie II : Modification du reseau</h2>
-
-Une des enjeux légitimes sur la mise en places du GLOSA vise à identifier ses limites en fonction du réseau étudié et de la configuration de l'infrastructure. Ainsi, dans cette partie ouverte, il est demander de:
-
- - <b>Question 2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombres de voies sur le reseau. Par exemple nombre de voie=[1,2,3,4]
- - <b>Question 3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux.  Par exemple des cycles=[30,60,90,120,150]
-
-Il serait bien dans cette partie de procéder à un plan d'expérience par quadriallage avec, en ordonnée et abscisse, les nombre de voie et les facteur de cycles, en considérant un ou des indicateurs de performances tels que la remontée de queue de bouchon, etc  
 
 <h2 align="center">Sources utiles</h2>
 
