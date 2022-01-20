@@ -9,4 +9,13 @@
         <begin value="0"/>   <!-- debut de la simulation-->
         <end value="3600"/>  <!-- fin de la simulation-->
     </time>
+
+    <output>
+        <tripinfo-output value="trip_info_test_100"/> <!-- sorite de tripinfo /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <summary-output value="summary_100"/> <!-- sorite de summary /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <queue-output value="queue_100"/> <!-- sorite de queue /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <fcd-output value="FCD_test_100"/> <!-- sorite de FCD /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <emission-output value="emission_test_100"/> <!-- sorite de emmission /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+    </output>
+
 </configuration>
