@@ -2,7 +2,6 @@
   <input>
     <net-file value="network.net.xml"/>
     	<route-files value="demand.rou.xml"/>
-	<additional-files value="loopdetector.xml"/>
 	
 	
     
@@ -22,5 +21,6 @@
   <emission-output value="stats/emissionStats.xml"/>
   <summary-output value="stats/summaryStats.xml"/>
   <amitran-output value="stats/trajectoriesStats.xml"/>
+  <fcd-output value="stats/fcdStats.xml"/>
 
 </configuration>
