@@ -138,7 +138,7 @@ def find_two_veh(position1, speed_limit, position2, veh_lane0, veh_lane1):
         
 
 def two_vehicles_limitated(position1, position2, time1, step, speed_limit, veh_lane0, veh_lane1):
-    """ apply VSL system to only two vehicles"""
+    """ apply VSL system to only two vehicles side-by-side"""
     if step == time1:
         veh_lane0, veh_lane1 = find_two_veh(position1, speed_limit, position2, veh_lane0, veh_lane1)
     
@@ -157,7 +157,7 @@ def two_vehicles_limitated(position1, position2, time1, step, speed_limit, veh_l
         
 ## def lane change system
 def activate_lane_changing(position1, position2, time1, time2, limitated_veh_list, step):
-    """activate the speed limit to all connected vehicle between position1 and position2 between time1 and time2"""
+    """activate lane changing to all connected vehicle between position1 and position2 between time1 and time2"""
     if time2 > step >= time1: # between 5 and 10 min
 
         running_veh = traci.vehicle.getIDList()
@@ -192,7 +192,7 @@ def run():
         traci.simulationStep()
 
         ### Uncomment this part in question XX
-        ### VSL system to limitate speef of all Connected Vehicles between 2000 and 5000m between 5 and 10 min
+        ### VSL system to limitate speed of all Connected Vehicles between 2000 and 5000m between 5 and 10 min
         ##limitated_veh_list = activate_VSL_system(2000, 5000, 600, 1200, limitated_veh_list, SPEED_LIMIT, step)
         ##print('number of limitated vehicles', len(limitated_veh_list))
         
