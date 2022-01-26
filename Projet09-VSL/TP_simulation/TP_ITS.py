@@ -79,6 +79,18 @@ def get_options():
 ## VSL system function 
 def activate_VSL_system(position1, position2, time1, time2, limitated_veh_list, speed_limit, step):
     """activate the speed limit to all connected vehicle between position1 and position2 between time1 and time2"""
+    
+    if len(limitated_veh_list)>0:
+        for veh in limitated_veh_list: # remove vehicles out of the range with speed restrictions
+            if traci.vehicle.getPosition(veh)[0] > position2:
+                traci.vehicle.setMaxSpeed(veh, 33.11)
+                limitated_veh_list.remove(veh)
+
+        if step>=time2:
+            for veh in limitated_veh_list: # remove the speed restriction when the time is elapsed
+                traci.vehicle.setMaxSpeed(veh, 33.11)
+                limitated_veh_list.remove(veh)
+                
     if time2 > step >= time1: # between 5 and 10 min
 
         running_veh = traci.vehicle.getIDList()  # get the list of vehicles currently driving on the network at this time-step
@@ -91,19 +103,10 @@ def activate_VSL_system(position1, position2, time1, time2, limitated_veh_list, 
                            limitated_veh_list += [veh]
             
         
-    if len(limitated_veh_list)>0:
-        for veh in limitated_veh_list: # remove vehicles out of the range with speed restrictions
-            if traci.vehicle.getPosition(veh)[0] > position2:
-                traci.vehicle.setMaxSpeed(veh, 33.11)
-                limitated_veh_list.remove(veh)
-
-        if step>=time2:
-            for veh in limitated_veh_list: # remove the speed restriction when the time is elapsed
-                traci.vehicle.setMaxSpeed(veh, 33.11)
-                limitated_veh_list.remove(veh)
+    
     return limitated_veh_list
 
-## def activate VSL system with only 2 CV
+## def activate VSL system with only 2 CV side-by-side
 def find_two_veh(position1, speed_limit, position2, veh_lane0, veh_lane1):
     """ find the two vehicles which will be limitated by the VSL system, one one each lane and the closest ones to position1"""
     potential_vehicles = []
@@ -194,11 +197,14 @@ def run():
         ##print('number of limitated vehicles', len(limitated_veh_list))
         
 
-        ###2 vehciles side-by-side
+        ### Uncomment this part in question XX
+        ### System to limitate speed of 2 vehicles side-by-side between 2000 and 5000m from 5min until they reach position = 5000m
         ##veh_lane1, veh_lane0 = two_vehicles_limitated(2000, 5000, 600, step, SPEED_LIMIT, veh_lane0, veh_lane1)
 
-        #limitated_veh_list = activate_lane_changing(2000, 5000, 600, 1200, limitated_veh_list, step)
-        #print(len(limitated_veh_list))
+        ### Uncomment this part in question XX
+        ### System to activate lane changing to all Connected Vehicles between 2000 and 5000m between 5 and 10min 
+        ##lane_changing_veh_list = activate_lane_changing(2000, 5000, 600, 1200, limitated_veh_list, step)
+        ##print(len(lane_changing_veh_list))
 
         step += 1
         print(step)
