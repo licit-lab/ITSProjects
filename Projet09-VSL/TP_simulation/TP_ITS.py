@@ -191,17 +191,17 @@ def run():
     while traci.simulation.getMinExpectedNumber() >0:
         traci.simulationStep()
 
-        ### Uncomment this part in question XX
+        ### Uncomment this part in question 1.1.2
         ### VSL system to limitate speed of all Connected Vehicles between 2000 and 5000m between 5 and 10 min
         ##limitated_veh_list = activate_VSL_system(2000, 5000, 600, 1200, limitated_veh_list, SPEED_LIMIT, step)
         ##print('number of limitated vehicles', len(limitated_veh_list))
         
 
-        ### Uncomment this part in question XX
+        ### Uncomment this part in question 2.2
         ### System to limitate speed of 2 vehicles side-by-side between 2000 and 5000m from 5min until they reach position = 5000m
         ##veh_lane1, veh_lane0 = two_vehicles_limitated(2000, 5000, 600, step, SPEED_LIMIT, veh_lane0, veh_lane1)
 
-        ### Uncomment this part in question XX
+        ### Uncomment this part in question 2.2
         ### System to activate lane changing to all Connected Vehicles between 2000 and 5000m between 5 and 10min 
         ##lane_changing_veh_list = activate_lane_changing(2000, 5000, 600, 1200, limitated_veh_list, step)
         ##print(len(lane_changing_veh_list))
