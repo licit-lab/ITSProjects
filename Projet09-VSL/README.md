@@ -10,7 +10,7 @@ Pour ce faire, procédez par étape en s'appuyant sur le contenu du dossier SUMO
 2. Vérifier le bon fonctionnement de SUMO en lançant la simulation contenue dans le fichier `init_simulation.sumocfg`. Il suffit d'ouvrir le fichier de simualtion depuis l'interface GUI de SUMO.
 3. Vérifier le bon fonctionnement de TraCI en exécutant le fichier Python `init_TP_ITS.py`:
  - Ouvrer le fichier Python `init_TP_ITS.py`pour i) changer le WorkingDirectory (au début du fichier Python) et mettre le lien vers le votre et  ii) Verifier que vous lancer la bonne simulation (à la fin du fichier Python), ici `init_simulation.sumocfg`.
- - Exécuter le fichier python depuis votre console de commande (```python your/path/to/working/directory/SUMO_installation/TP_ITS.py```). Vous pouvez alors observer que l'interface SUMO s'active et que les étapes de simulation défilent dans l'invite de commande de SUMO ou même celle de votre machine.
+ - Exécuter le fichier python depuis votre console de commande (```python your/path/to/working/directory/SUMO_installation/init_TP_ITS.py```). Vous pouvez alors observer que l'interface SUMO s'active et que les étapes de simulation défilent dans l'invite de commande de SUMO ou même celle de votre machine.
 
 N'oubliez pas de créer l'environnment associé au projet : `environment_P07-10.yml`.
 
