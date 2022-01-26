@@ -62,5 +62,5 @@ if __name__ == "__main__":
         sumoBinary = checkBinary('sumo-gui')
     
     #traci.start([sumoBinary, "-c", "simulation_name.sumocfg", "--seed", seed_number])
-    traci.start([sumoBinary, "-c", "simulation.sumocfg", "--seed", str(30)])
+    traci.start([sumoBinary, "-c", "init_simulation.sumocfg", "--seed", str(30)])
     run()
