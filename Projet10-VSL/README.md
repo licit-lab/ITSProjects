@@ -60,7 +60,7 @@ Le réseau d'étude est présenté dans le schéma ci-dessous.
   <img src=https://github.com/licit-lab/ITSProjects/blob/05e6a1fa86d3e3550ce92b921415096289104123/Projet09-VSL/images/scenarioITS.png width="700">
 </p>
   
-Le sujet du TP est un [jupyter notebook](Projet09-VSL.ipynb). La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
+Le sujet du TP est un [jupyter notebook](Projet10-VSL.ipynb). La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
 
 Vous pouvez récupérer les fichiers de simulation et le  script python à compléter [ici](TP_simulation). Votre script python complété est également attendu dans votre rendu final.
   
