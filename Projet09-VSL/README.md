@@ -2,7 +2,7 @@
 # Projet O9 : Implémentation d'un système de régulation dynamique de vitesses basé sur les véhicules connectés
 ## Préambule : Installation de Sumo
 Pour installer SUMO et vérifier le bon fonctionnement des simulations, cliquer
-<a href = "https://github.com/licit-lab/ITSProjects/blob/415797d33cd19d347c11a93686661d55a7af4943/Projet09-VSL/SUMO_installation/notice_installation">  ici </a>
+<a href = "https://github.com/licit-lab/ITSProjects/blob/1c6f270fec0ab690d6284fe3ccc3c709c10cecb4/Projet09-VSL/SUMO_installation/Fiche_installation_SUMO.pdf">  ici </a>
 
 Au terme de l'installation de SUMO, n'oubliez pas de la tester. 
 Pour ce faire, procédez par étape en s'appuyant sur le contenu du dossier SUMO_installation :
