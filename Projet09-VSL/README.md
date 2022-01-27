@@ -1,7 +1,7 @@
 
 # Projet O9 : Implémentation d'un système de régulation dynamique de vitesses basé sur les véhicules connectés
 ## Préambule : Installation de Sumo
-Pour installer SUMO et vérifier le bon fonctionnement des simulations, cliquer [ici](SUMO_installation/Fiche_installation_SUMO.pdf)
+Pour installer SUMO et vérifier le bon fonctionnement des simulations, cliquer [ici](SUMO_installation/Fiche_installation_SUMO.pdf).
 
 
 Au terme de l'installation de SUMO, n'oubliez pas de la tester. 
@@ -60,16 +60,13 @@ Le réseau d'étude est présenté dans le schéma ci-dessous.
   <img src=https://github.com/licit-lab/ITSProjects/blob/05e6a1fa86d3e3550ce92b921415096289104123/Projet09-VSL/images/scenarioITS.png width="700">
 </p>
   
-<a href = "https://github.com/licit-lab/ITSProjects/blob/7f741b3e599073e9f100c87ce424868b322bbc0b/Projet09-VSL/Projet09-VSL.ypnb.ipynb"> Le sujet du TP est un jupyter notebook. </a> La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
+Le sujet du TP est un [jupyter notebook](Projet09-VSL.ipynb). La version complétée de ce jupyter (comprenant vos réponses) constituera votre rendu.
 
-Vous pouvez récupérer les fichiers de simulation et le  script python à compléter 
-<a href = "https://github.com/licit-lab/ITSProjects/blob/84ce81ab236960da50563422684ba01f02a958e1/Projet09-VSL/TP_simulation/run_simulation"> ici. </a> Votre script python complété est également attendu dans votre rendu final.
+Vous pouvez récupérer les fichiers de simulation et le  script python à compléter [ici](TP_simulation). Votre script python complété est également attendu dans votre rendu final.
   
 ## Outils pour traiter les fichiers de sortie
-Pour vous aider à analyser les fichiers de sortie, vous pouvez aller voir 
-<a href = "https://github.com/licit-lab/ITSProjects/blob/13b5563437d8c0f3f47b7006e9955b382b85f398/Projet09-VSL/Outils_analyses.ipynb">   ici. </a>
-Pour convertir vos fichiers xml en fichiers csv, vous pouvez utiliser la commande suivante dans votre terminal : python tools/xml/xml2csv.py nom_fichier.xml
- 
+Pour vous aider à analyser les fichiers de sortie, vous pouvez aller voir [le notebook suivant](Outils_analyses.ipynb).
+
 ## Liens utiles 
 Pour aller voir la documentation
 <a href ="https://sumo.dlr.de/docs/"> SUMO </a> 
