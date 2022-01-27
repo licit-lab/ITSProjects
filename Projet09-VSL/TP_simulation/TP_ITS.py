@@ -155,22 +155,6 @@ def two_vehicles_limitated(position1, position2, time1, step, speed_limit, veh_l
                 veh_lane1 = []
     return veh_lane1, veh_lane0
         
-## def lane change system
-def activate_lane_changing(position1, position2, time1, time2, limitated_veh_list, step):
-    """activate lane changing to all connected vehicle between position1 and position2 between time1 and time2"""
-    if time2 > step >= time1: # between 5 and 10 min
-
-        running_veh = traci.vehicle.getIDList()
-            
-        for veh in running_veh : 
-            if traci.vehicle.getTypeID(veh) == 'CV':
-                if not veh in limitated_veh_list:
-                    if position1 <= traci.vehicle.getPosition(veh)[0] <= position2:
-                            if traci.vehicle.getLaneIndex(veh) == 0:
-                                traci.vehicle.changeLane(veh, 1, time2-time1)
-                                limitated_veh_list += [veh]
-            
-    return limitated_veh_list
 
 ### Simulation 
 
@@ -201,10 +185,7 @@ def run():
         ### System to limitate speed of 2 vehicles side-by-side between 2000 and 5000m from 5min until they reach position = 5000m
         ##veh_lane1, veh_lane0 = two_vehicles_limitated(2000, 5000, 600, step, SPEED_LIMIT, veh_lane0, veh_lane1)
 
-        ### Uncomment this part in question 2.2
-        ### System to activate lane changing to all Connected Vehicles between 2000 and 5000m between 5 and 10min 
-        ##lane_changing_veh_list = activate_lane_changing(2000, 5000, 600, 1200, limitated_veh_list, step)
-        ##print(len(lane_changing_veh_list))
+       
 
         step += 1
         print(step)
