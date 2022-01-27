@@ -1,5 +1,5 @@
 
-# Projet O9 : Implémentation d'un système de régulation dynamique de vitesses basé sur les véhicules connectés
+# Projet 10 : Implémentation d'un système de régulation dynamique de vitesses basé sur les véhicules connectés
 ## Préambule : Installation de Sumo
 Pour installer SUMO et vérifier le bon fonctionnement des simulations, cliquer [ici](SUMO_installation/Fiche_installation_SUMO.pdf).
 
