@@ -22,14 +22,16 @@ os.environ['SUMO_HOME'] = 'Users\eleonore\sumo' # /path/to/your/SUMO_HOME # on M
 # %% DO NOT TOUCH IT! Automatic process to adapt the configuration file of SUMO: 
 # change the configuration file of SUMO to include the specified folder dedicated to output collection
 import xml.etree.ElementTree as ET
+# https://docs.python.org/3/library/xml.etree.elementtree.html
 
 cfgFileName = "simulation_vsl.sumocfg"
 
 xmlTree = ET.parse(cfgFileName)
 rootElement = xmlTree.getroot()
+# rootElement.tag
 
 # Identify the tags to update
-dictOutputFileByTag = {"route-files": demandXMLFile,
+dictOutputFileByTag = {"input": {"route-files": demandXMLFile},
     "tripinfo-output": "tripinfo.xml", 
     "emission-output": "emissionStats.xml",
     "summary-output": "summaryStats.xml",
@@ -42,8 +44,10 @@ for tag in dictOutputFileByTag.keys(): # ["tripinfo-output", "emission-output", 
         #NoNeeds : # Check if title contains the word Python
         #NoNeeds:  if 'Python' in element.find('title').text :
         #Change xml attribute value
-        if tag=="route-files":
-            element.set('value', dictOutputFileByTag[tag])
+        if tag=="input":
+            subtag = list(dictOutputFileByTag[tag])[0]
+            for subelement in element.findall(subtag):
+                subelement.set('value', dictOutputFileByTag[tag][subtag])
         else:
             element.set('value', outputFolder+dictOutputFileByTag[tag])
 
