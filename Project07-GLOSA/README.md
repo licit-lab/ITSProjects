@@ -268,11 +268,11 @@ Ci dessous vous trouverez quelques sources utiles au traitement du projet:
 
 <h2 align="center">Modalités d'évaluation</h2>
 
-Oral: Note: Je n'aime pas personnellement les questions pièges
+Oral: Note: Personnellement, je n'aime pas les questions-pièges.
 
-Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder les 10-15 pages, evitez donc trop de répétition et de divager sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisagables
+Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder 10-15 pages. Evitez donc trop de répétition et/ou de digresser sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches, ainsi que des perspectives envisageables
 
-Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
+Pour toute question éventuelle sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
 
 
