@@ -285,10 +285,10 @@ Pour toute question éventuelle sur le projet, vous pouvez me contacter à l'adr
 <dd> [3] K. Katsaros, R. Kernchen, M. Dianati and D. Rieck, "Performance study of a Green Light Optimized Speed Advisory (GLOSA) application using an integrated cooperative ITS simulation platform," 2011 7th International Wireless Communications and Mobile Computing Conference, 2011, pp. 918-923, doi: 10.1109/IWCMC.2011.5982524.</dd> 
 <dd> [4] Stebbins, S., Hickman, M., Kim, J., Vu, H.L., 2017. Characterising green light optimal speed advisory trajectories for platoon-based optimisation. Transport. Res. Part C:Emerg. Technol. 82, 43–62.</dd> 
 <dd> [5] https://www.neogls.com/produit/glosa/</dd> 
+<dd> [6] https://www.researchgate.net/publication/259896470_Preparing_Simulative_Evaluation_of_the_GLOSA_Application</dd> 
 </ul>
 </div>
-Ajouter les refs suivantes
-https://www.researchgate.net/publication/259896470_Preparing_Simulative_Evaluation_of_the_GLOSA_Application
+
 
 <p align="center">
 <img src="https://www.entpe.fr/themes/custom/entpe/logo_entpe.png" width="450">
