@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+
+    <vType id="CV" length="5" minGap="2" maxSpeed="33" vClass="private" speedDev="0" accel="1" sigma="0" tau="1.23"/>
+   
+
+    <flow id="flux_E1" type="CV" begin="0.00" color="blue" from="E" to="unevoie" via="deuxvoies" end="300.00" number="200" departSpeed="desired" departLane="random"/>
+
+  
+
+    <flow id="flux_E2" type="CV" begin="300.00" color="blue" from="E" to="unevoie" via="deuxvoies" end="450.00" number="200" departSpeed="desired" departLane="random"/>
+
+   
+
+    <flow id="flux_E3" type="CV" begin="450.00" color="blue" from="E" to="unevoie" via="deuxvoies" end="750.00" number="30" departSpeed="desired" departLane="random"/>
+
+    
+
+
+
+</routes>

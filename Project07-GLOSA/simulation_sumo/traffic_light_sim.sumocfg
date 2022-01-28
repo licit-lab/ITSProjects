@@ -1,0 +1,21 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="traffic_light_net.net.xml"/>   <!-- fichier reseau -->  
+        <route-files value="traffic_light_rou_sans_glosa.rou.xml"/> <!-- fichiers de la demande -->  
+    </input>
+
+    <time>
+        <begin value="0"/>   <!-- debut de la simulation-->
+        <end value="3600"/>  <!-- fin de la simulation-->
+    </time>
+
+    <output>
+        <tripinfo-output value="trip_info_test_100"/> <!-- sorite de tripinfo /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <summary-output value="summary_100"/> <!-- sorite de summary /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <queue-output value="queue_100"/> <!-- sorite de queue /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <fcd-output value="FCD_test_100"/> <!-- sorite de FCD /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <emission-output value="emission_test_100"/> <!-- sorite de emmission /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+    </output>
+
+</configuration>
