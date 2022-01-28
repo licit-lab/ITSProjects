@@ -265,16 +265,14 @@ Ci-dessous vous trouverez quelques sources utiles au traitement du projet:
  
  
 
+<h2 align="center">Partie II : Modification de la demande</h2>
 
-<h2 align="center">Modalités d'évaluation</h2>
+Un des enjeux légitimes sur la mise en place du GLOSA est d'identifier son ODD (Operational Design Domain), c'est-à-dire son domaine opérationnel optimal. Ceci passe par une analyse de ses limites de performance en fonction de la demande. Ainsi dans cette partie, il est demandé de:
 
-Oral: Note: Je n'aime pas personnellement les questions pièges
+ - <b>Question 2: </b> A demande totale fixe, évaluer l'influence d'un taux de VAC augmentant sur le réseau. Vous pourrez considérer par exemple les valeurs de MPR suivantes [0%,10%,30%,50%,75%,100%]
+ - <b>Question 3: </b> A taux de VAC constant (ie flotte de véhicules connectés identique), évaluer les limites du GLOSA pour une demande augmentant. Par exemple, prendre des demandes évoluant de la façon suivante d=[500,1000,1500,2000,2500,3000].
 
-Rapport: Le rapport doit être rédigé de manière concise. Le rapport ne doit pas excéder les 10-15 pages, évitez donc trop de répétition et de divaguer sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisageables.
-
-Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
-
-
+Il serait bien dans cette partie de procéder à un plan d'expérience par quadrillage avec, en ordonnée et abscisse, la demande et le taux de pénétration des véhicules, en considérant un ou des indicateurs de performances tels que la remontée de queue de bouchon, etc
 
 <h2 align="center">Bibliographie</h2>
 <br/> 
