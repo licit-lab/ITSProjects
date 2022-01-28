@@ -43,7 +43,9 @@ On peut généraliser cette approche à des réseaux de multisegment:
   
 "Soit une liste de n segments S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leur longueur l<sub>i</sub> où 1<i<n, les vitesses minimums et maximums du segment i, [v<sub>i</sub><sup>min</sup>, v<sub>i</sub><sup>max</sup>], sont connues.
 
-L'horaires des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'état du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objectif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+
+L'horaire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+
 
 <p align="center">   
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-40%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
@@ -265,11 +267,13 @@ Ci dessous vous trouverez quelques sources utiles au traitement du projet:
 
 <h2 align="center">Modalités d'évaluation</h2>
 
-Oral: Note: Je n'aime pas personnellement les questions pièges
+Oral: 
 
-Rapport: Le rapport doit être rédigé de manière concise. Le rapport ne doit pas excéder les 10-15 pages, évitez donc trop de répétition et de divaguer sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisageables.
+Note: Personellement, je n'aime pas les questions-pièges
 
-Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
+Rapport: Le rapport doit être rédigé dans un français de qualité et de manière concise. Le rapport ne doit pas excéder 10-15 pages. Evitez donc trop de répétition et de vous disperser sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches, ainsi que des perspectives envisagables.
+
+Pour toute question éventuelle sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
 
 
