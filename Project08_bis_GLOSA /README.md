@@ -14,7 +14,7 @@
 <h2 align="center" id="GLOSA?">Qu'est-ce que le GLOSA ?</h2>
 <br/> 
 <div align="justify">
-Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un service basé sur un système de communication Infrastructure-to-Vehicles (I2V). Il permet d'envoyer des informations relatives à l'état du feu de circulation (appelées SPATEM en Europe) vers les véhicules connectés en approche. L'objectif de cette communication est de permettre au véhicule connecté de tirer partie des informations relatives au statut des feux de circulation pour l'aider à optimiser sa vitesse d'approche de l'intersection [1]. Ce cas d'utilisation des ITS n'est pas une problématique récente [2,3,4] et est, de fait, déjà intégré dans certaines villes [5].
+Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un service basé sur un système de communication Infrastructure-to-Vehicles (I2V). Il permet d'envoyer des informations relatives à l'état du feu de circulation (appelées SPATEM en Europe) vers les véhicules connectés en approche. L'objectif de cette communication est de permettre au véhicule connecté de tirer parti des informations relatives au statut des feux de circulation pour l'aider à optimiser sa vitesse d'approche de l'intersection [1]. Ce cas d'utilisation des ITS n'est pas une problématique récente [2,3,4] et est, de fait, déjà intégré dans certaines villes [5].
 </div>
 <br/>
 
@@ -24,28 +24,28 @@ Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un service basé sur un s
 <h3 align="center">Comment ça marche ?</h3>
 <br/> 
 <div align="justify">
-Le GLOSA informe le conducteur du véhicule de la présence d'un feu de circulation, de son état actuel (phase) et de la durée restante pour la phase courante. A l'approche de cette intersection, il est tout à fait possible que l'état du feu soit distinct sur chacune des voies. Deux cas peuvent se produire:
+Le GLOSA informe le conducteur du véhicule de la présence d'un feu de circulation, de son état actuel (phase) et de la durée restante pour la phase courante. À l'approche de cette intersection, il est tout à fait possible que l'état du feu soit distinct sur chacune des voies. Deux cas peuvent se produire:
 <ul>
   <li>soit le feu est rouge : dans ce cas, le feu de circulation indique si oui ou non, il pourra passer à la phase verte pour un changement de vitesse donnée, </li>
   <li>soit la phase est déjà verte : dans ce cas, l'information concerne si oui ou non le véhicule pourra passer en considérant une vitesse donnée.</li>
 </ul>
 
  
-Mathématiquement, il est possible de traduire ce procédé selon la formulation du mono-segment de 
+Mathématiquement, il est possible de traduire ce procédé selon la formulation du monosegment de 
 <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
 
-"Soit un segment <i>s</i> de longueur <i>l</i>  connue, Soit les vitesses minimale et maximale sur le segment [v<sup>min</sup>,v<sup>max</sup>], ainsi que la fonction <i>t<sub>s</sub></i> lisant à tout instant <i>t</i> la table horaire associée aux feux de circulation en extrêmité de section, <i>t<sub>s</sub>(t)={GREEN,YELOW,RED}</i>. 
+"Soit un segment <i>s</i> de longueur <i>l</i>  connu, soit les vitesses minimales et maximales sur le segment [v<sup>min</sup>,v<sup>max</sup>], ainsi que la fonction <i>t<sub>s</sub></i> lisant à tout instant <i>t</i> la table horaire associée aux feux de circulation en extrémité de section, <i>t<sub>s</sub>(t)={GREEN,YELOW,RED}</i>. 
 
-L'objectif consiste à trouver la vitesse minimale <i>v</i> pour que le vehicule puisse passer au vert":
+L'objectif consiste à trouver la vitesse minimale <i>v</i> pour que le véhicule puisse passer au vert":
  
 <p align="center"> 
   <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-48%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
   </p>
-On peut généraliser cette approche à des reseaux de multi-segment:
+On peut généraliser cette approche à des réseaux de multisegment:
   
-"Soit une liste de n segments S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leur longueur l<sub>i</sub> où 1<i<n, les vitesses minimun et maximun du segment i, [v<sub>i</sub><sup>min</sup>, v<sub>i</sub><sup>max</sup>], sont connues.
+"Soit une liste de n segments S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leur longueur l<sub>i</sub> où 1<i<n, les vitesses minimums et maximums du segment i, [v<sub>i</sub><sup>min</sup>, v<sub>i</sub><sup>max</sup>], sont connues.
 
-L'horraire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+L'horaires des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'état du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objectif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
 
 <p align="center">   
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-40%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
@@ -54,9 +54,9 @@ L'horraire des feux de circulation t<sub>si</sub> à la fin du segment i défini
 
 Usuellement, on peut traduire cette notion avec les images 1 et 2. 
 
-La première image montre un scénario, où une voiture s'approche d'un feu de circulation n'étant pas équipé d'un GLOSA. Comme aucune information n'est transmise au conducteur, la vitesse qu'il maintient l'obligera à s'arrêter au feu rouge, puis à redémarrer lorsque que le cycle passe au vert. 
+La première image montre un scénario, où une voiture s'approche d'un feu de circulation n'étant pas équipé d'un GLOSA. Comme aucune information n'est transmise au conducteur, la vitesse qu'il maintient l'obligera à s'arrêter au feu rouge, puis à redémarrer lorsque le cycle passe au vert. 
 
-Dans le deuxième scénario, on suppose cette fois que la voiture et le feu de circulation sont équipés du système GLOSA et que le feu de circulation peut transmettre cette information à un distance fixe (double flèche communication). Tant que le véhicule ne se trouve pas dans cette zone, il "maintient" sa vitesse en espérant passer au vert. Lorsqu'il entre dans la zone de communication, le feu de circulation envoie une information indiquant la vitesse à adopter et/ou une instruction, en l'occurrence "ralentir" dans ce cas. Avec la nouvelle vitesse adoptée, le conducteur n'aura pas besoin de s'arrêter et pourra continuer son itinéraire après avoir franchi le feu de circulation.
+Dans le deuxième scénario, on suppose cette fois que la voiture et le feu de circulation sont équipés du système GLOSA et que le feu de circulation peut transmettre cette information à une distance fixe (double flèche de communication). Tant que le véhicule ne se trouve pas dans cette zone, il "maintient" sa vitesse en espérant passer au vert. Lorsqu'il entre dans la zone de communication, le feu de circulation envoie une information indiquant la vitesse à adopter et/ou une instruction, en l'occurrence "ralentir" dans ce cas. Avec la nouvelle vitesse adoptée, le conducteur n'aura pas besoin de s'arrêter et pourra continuer son itinéraire après avoir franchi le feu de circulation.
 
  
 <p align="center">   
@@ -65,7 +65,7 @@ Dans le deuxième scénario, on suppose cette fois que la voiture et le feu de c
    </p>
  
 
-De manière similaire, les deux images suivantes représentent le cas, où le feu de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesses bien évidemment. 
+De manière similaire, les deux images suivantes représentent le cas, où le feu de circulation indique au conducteur d'augmenter sa vitesse pour pouvoir passer au rouge, en respectant les limites de vitesse bien évidemment. 
  
 <p align="center">   
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/explication_glosa_vert.png" width="450">
@@ -81,7 +81,7 @@ De façon plus avancée, il est également possible de formuler et appliquer cet
 <div align="justify">
 La mise en place de ce cas d'utilisation suscite quelques questionnements et n'est pas sans enjeux:
 <ul>
-  <li> Quels est sont les impacts en termes d'efficaté du trafic ? Ce cas d'usage permet-il de réduire la congestion aux abords d'un feu de circulation ? </li>
+  <li> Quels est sont les impacts en termes d'efficacité du trafic ? Ce cas d'usage permet-il de réduire la congestion aux abords d'un feu de circulation ? </li>
   <li> Quels sont les impacts en termes d'émissions de polluants? Peut-on réduire les émissions relatives au trafic ? etc... </li>
 </ul>
 Toutes ces questions sont au centre du GLOSA et le but de ce sujet est précisément de mener des analyses pour qualifier ces impacts. Avant d'aborder les concepts liés à la recherche, nous allons voir comment le GLOSA peut-être intégré et étudié dans l'outil de simulation SUMO (Simulation of Urban MObility).
@@ -92,26 +92,26 @@ Toutes ces questions sont au centre du GLOSA et le but de ce sujet est précisé
 <h2 align="center" id="GLOSASUMO">GLOSA dans SUMO</h2>
 <br/> 
 <div align="justify">
-Contrairement à d'autres systèmes de transport intelligent qui nécessitent l'utilisation d'une interface comme  <a href="https://sumo.dlr.de/docs/TraCI.html">TraCi</a> pour développer de nouveaux services dans SUMO, des modules de <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a>  ont été spécialement implémentés directement dans le coeur de simualtion de SUMO depuis sa version 1.9.1. 
+Contrairement à d'autres systèmes de transport intelligent qui nécessitent l'utilisation d'une interface comme  <a href="https://sumo.dlr.de/docs/TraCI.html">TraCi</a> pour développer de nouveaux services dans SUMO, des modules de <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a>  ont été spécialement implémentés directement dans le cœur de simulation de SUMO depuis sa version 1.9.1. 
 
-Comme nous l'avons vu dans la section <i><a href="#GLOSA?">Qu'est-ce que le GLOSA ?</a></i>, la fonction GLOSA informe les véhicles de deux manières. 
+Comme nous l'avons vu dans la section <i><a href="#GLOSA?">Qu'est-ce que le GLOSA ?</a></i>, la fonction GLOSA informe les véhicules de deux manières. 
 
-La première manière est une information de ralentissement, dans ce cas l'infrastructure transmet une instruction au véhicule en lui intimant de ralentir du fait d'une phase de feu déjà au "rouge" ou d'une délai trop court pour franchir l'intersection durant le vert restant.
+La première manière est une information de ralentissement, dans ce cas l'infrastructure transmet une instruction au véhicule en lui informant de ralentir du fait d'une phase de feu déjà au "rouge" ou d'un délai trop court pour franchir l'intersection durant le vert restant.
 
 La deuxième manière est une information d'accélération, le feu de circulation informe le véhicle qu'il doit augmenter sa vitesse pour pouvoir passer au vert. 
 
-Pour mettre en place ce module, il faut à la fois équiper les véhicles et l'infrastructure (ie les feux de circulation). 
+Pour mettre en place ce module, il faut à la fois équiper les véhicules et l'infrastructure (et les feux de circulation). 
 </div>   
 
 <br>
-<h3 align="center">Equipement des véhicles</h3>
+<h3 align="center">Equipement des véhicules</h3>
 
 <br/> 
 <div align="justify">
-Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">dispositif</a> d'information existant dans SUMO, il existe principalement deux manières:
+Pour équiper les véhicules d'un <a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">dispositif</a> d'information existante dans SUMO, il existe principalement deux manières:
 <br/>   
   <ul>
-    <li>Soit nous ciblons le type de véhicules, que nous voulons équiper du dispositif. Dans ce cas, il faut modifier la structure des fichiers d'entrée de SUMO visant à décrire les véhicles pour y integrer la commande: </li>
+    <li>Soit nous ciblons le type de véhicules, que nous voulons équiper du dispositif. Dans ce cas, il faut modifier la structure des fichiers d'entrée de SUMO visant à décrire les véhicules pour y intégrer la commande: </li>
 <br/>
 
   
@@ -121,7 +121,7 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
  </ul>
 
  <ul>
-  <dd> Cette commande peut être incluse dans les <b>vTypes</b> ou bien directement dans la discription individuelle du véhicule. L'avantage de cette approche, est qu'elle permet de cibler le type de véhicule ayant un équipement.
+  <dd> Cette commande peut être incluse dans les <b>vTypes</b> ou bien directement dans la description individuelle du véhicule. L'avantage de cette approche est qu'elle permet de cibler le type de véhicule ayant un équipement.
   </dd> 
   </ul> 
 
@@ -135,16 +135,16 @@ Pour équiper les véhicles d'un <a href="https://sumo.dlr.de/docs/Definition_of
   ```
 </ul>
 <ul>
-  <dd> Ici le 100 illustre que 100% des véhicules sont équipés du GLOSA, pour changer la probabilité, il suffit de changer la valeur du nombre... L'avantage de cette méthode est quelle permet de construire des fichiers automatiquements sans interventions humain. Elle permet également de repliquer un grand nombre de fois une simulation en changant des paramètres, par exemple en utilisant des boucles dans des fichiers <a href="https://fr.wikihow.com/%C3%A9crire-un-fichier-batch">BACH</a>.
+  <dd> Ici le 100 illustre que 100% des véhicules sont équipés du GLOSA, pour changer la probabilité, il suffit de changer la valeur du nombre... L'avantage de cette méthode est qu’elle permet de construire des fichiers automatiquement sans interventions humaines. Elle permet également de répliquer un grand nombre de fois une simulation en changeant des paramètres, par exemple en utilisant des boucles dans des fichiers <a href="https://fr.wikihow.com/%C3%A9crire-un-fichier-batch">BACH</a>.
   </dd> 
   </ul> 
 
     
   <ul>
-    <li>D'autres approches existent également, comme l'implantation deterministe ou l'établissement d'une liste d'identifiants des véhicules à équiper lors du lancement de scénario en ligne de commande, mais, pour ce projet, il ne sera pas utile de les utiliser.
+    <li>D'autres approches existent également, comme l'implantation déterministe ou l'établissement d'une liste d'identifiants des véhicules à équiper lors du lancement de scénario en ligne de commande, mais, pour ce projet, il ne sera pas utile de les utiliser.
     </li>
     </ul>
-Tout les approches se valent, il suffit de choisir dans un premier temps la quel vous êtes le plus à l'aise d'utiliser. A noter que cette approche est similaire pour d'autres équipements en remplacant glosa par l'<a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">équipement</a> présent dans SUMO.
+Tout les approches se valent, il suffit de choisir dans un premier temps la quel vous êtes le plus à l'aise d'utiliser. À noter que cette approche est similaire pour d'autres équipements en remplaçant glosa par l'<a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">équipement</a> présent dans SUMO.
 </div>  
 
 <br>
@@ -154,9 +154,9 @@ Tout les approches se valent, il suffit de choisir dans un premier temps la quel
 <div align="justify">
 Il existe différentes manières de bâtir une simulation du trafic dans SUMO. Les scénarios faisant appel au GLOSA ne font pas exception. 
 
-Pour implémenter le GLOSA dans SUMO, il est possible de modifier le fichier ```.net```, mais ceci peut pertuber et fausser les resultats en cas de mauvaise manipulation. 
+Pour implémenter le GLOSA dans SUMO, il est possible de modifier le fichier ```.net```, mais ceci peut perturber et fausser les résultats en cas de mauvaise manipulation. 
 
-Dans notre cas et comme le préconise la documentation de SUMO, nous allons spécifier les paramètres du GLOSA du feux de circulation cible dans un fichier d'entrée additionnel. Pour activer la fonction GLOSA, il suffit de spécifier les paramètres:
+Dans notre cas et comme le préconise la documentation de SUMO, nous allons spécifier les paramètres du GLOSA du feu de circulation cible dans un fichier d'entrée additionnel. Pour activer la fonction GLOSA, il suffit de spécifier les paramètres:
 <ul>
   <li>distance de communication, </li>
   <li>id du feux de circulation, et</li>
@@ -182,9 +182,9 @@ Cette approche à l'avantage de cibler le feu de circulation du réseau.
 Il existe 4 paramètres GLOSA dans SUMO:
 
   <ul>
-    <li>device.glosa.range : spécifier la distance de communication du feux de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par defaut égale à 100 mètres</li>
-    <li>device.glosa.min-speed : indique la vitesse minimun pour effectuer la manoeuvre, il s'applique au paramètre du véhicles et il est par defaut égale à 5m/s soit 18 km/h</li>
-    <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication, il s'applique au paramètre du véhicles et il est par defaut égale à 1.1</li>
+    <li>device.glosa.range : spécifier la distance de communication du feu de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par défaut égal à 100 mètres</li>
+    <li>device.glosa.min-speed : indique la vitesse minimum pour effectuer la manœuvre, il s'applique au paramètre du véhicule et il est par défaut égal à 5m/s soit 18 km/h</li>
+    <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication, il s'applique au paramètre du véhicule et il est par défaut égal à 1.1</li>
     <li>jmDriveAfterYellowTime : indique la volonté de continuer à rouler au jaune en fonction de la durée de fonctionnement de la phase jaune (par défaut 0). La valeur sera prise en compte lors de la vérification de la faisabilité d'une manœuvre d'accélération</li>
     <br/>
 </div>  
@@ -194,14 +194,14 @@ Il existe 4 paramètres GLOSA dans SUMO:
 <div align="justify">
 L'objectif de cette première partie est d'intégrer un système GLOSA à l'aide des explications produites dans la section <a href="#GLOSASUMO">GLOSA dans SUMO</a>. 
 
-Pour ce faire, des fichiers sont présents dans le dossier simulation_sumo. Ce repertoire comprend 
+Pour ce faire, des fichiers sont présents dans le dossier simulation_sumo. Ce répertoire comprend 
 <ul>
   <li>un reseau (fichier ```.net```), </li>
   <li>un fichier de demande (```.rou```) qui contient la demande en transport, ainsi que la distribution des types de véhicules (phase de génération de la demande par type de véhicule),</li>
-  <li>un fichier additionel comprennant les paramètres du GLOSA pour le feu de circulation, et</li> 
+  <li>un fichier additionnel comprenant les paramètres du GLOSA pour le feu de circulation, et</li> 
   <li>un fichier ```.sumocfg```qui est le fichier permettant l'exécution de la simulation. </li>
 </ul>
-A noter encore que cette configuration de la simulation n'est pas exclusif. Plusieurs types d'imbrication sont possibles, libre à vous de la modifier pour proposer d'autres structures. 
+À noter encore que cette configuration de la simulation n'est pas exclusive. Plusieurs types d'imbrication sont possibles, libres à vous, de la modifier pour proposer d'autres structures. 
  
 <br>
 Quelques caractéristiques de la simulation:
@@ -217,16 +217,16 @@ Quelques caractéristiques de la simulation:
  <br>
   
   
-Définition du élementaire :
+Définition élémentaire :
  
 - MPR=0%: les véhicules/conducteurs ne sont pas connectés et ne disposent pas d'informations sur les
-conditions de l'état du feux de cicrulcation, à l'exception des informations résultant de leur expertise (c'est-à-dire qu'ils connaissent
+conditions de l'état du feu de circulation, à l'exception des informations résultant de leur expertise (c'est-à-dire qu'ils connaissent
 sur les conditions habituelles) : cela équivaut à un taux de pénétration du marché (MPR) fixé à 0 %.
  
 - MPR=100%: les véhicules/conducteurs disposent d'informations sur l'état du feux de circulation. Il permet au véhicule/conducteur de choisir la meilleure option
-en termes de vitesse à l'approche d'un feux de circulation. Nous supposerons que tous les chauffeurs disposent
-de l'information de la même manière lorsque l'information est disponible. Il correspond à un marché
-Taux de Pénétration de 100% des Véhicules Connectés.
+en termes de vitesse à l'approche d'un feu de circulation. Nous supposerons que tous les chauffeurs disposent
+de l'information de la même manière lorsque l'information est disponible. Il correspond à un marché:
+Taux de Pénétration de 100% des Véhicules connectés.
 
 
  
@@ -238,26 +238,25 @@ Pour l'analyse globale, vous devrez évaluer la différence en termes de:
  - Temps de parcours cumulé
  - Temps perdu 
  - Nombre de véhicules qui s'arrêtent
- - Volume des vehicules à l'arrêt et le pourcentage de véhicules à l'arrêt en fonction du taux de penetration des VAC
+ - Volume des véhicules à l'arrêt et le pourcentage de véhicules à l'arrêt en fonction du taux de pénétration des VAC
  - Comparaison des deux diagrammes espaces-temps
  
-Vous pourrez utiliser le jupyter notebook pour vous aider dans les démarches et les figures disponibles. Neanmoins, la librairie plotly n'est qu'un outil, libre à vous d'en utiliser une autre. Egalement, les figures proposées dans ce juypternotebook ne sont pas forcément exactement les mêmes que celles demandées pour répondre aux questions. À vous de les adapter!
- 
+Vous pourrez utiliser le jupyter notebook pour vous aider dans les démarches et les figures disponibles. Néanmoins, la librairie plotly n'est qu'un outil, libre à vous d'en utiliser une autre. Également, les figures proposées dans ce juypternotebook ne sont pas forcément exactement les mêmes que celles demandées pour répondre aux questions. À vous de les adapter!
  
 </div>
 
-<h2 align="center">Partie II : Modification du reseau</h2>
+<h2 align="center">Partie II : Modification du réseau</h2>
 
-Un des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du reseau étudiant. Ainsi dans cette partie ouverte, il est demander de:
+Une des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du réseau étudiant. Ainsi dans cette partie ouverte, il est demandé de:
 
- - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombre de voie sur le reseau. Par exemple nombre de voie=[1,2,3,4]
+ - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombres de voies sur le réseau. Par exemple nombre de voie=[1,2,3,4]
  - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux.  Par exemple des cycles=[30,60,90,120,150]
 
-Il serait bien dans cette partie de faire des quadriallage avec dans l'ordonnées et l'abscisse les nombre de voie et les facteur de cycles
+Il serait bien dans cette partie de faire des quadrillages avec dans l'ordonnée et l'abscisse les nombres de voies et les facteurs de cycles
 
 <h2 align="center">Sources utiles</h2>
 
-Ci dessous vous trouverez quelques sources utiles au traitement du projet:
+Ci-dessous vous trouverez quelques sources utiles au traitement du projet:
 
 - <a href="https://sumo.dlr.de/docs/netconvert.html">Netconvert</a> sur SUMO
 - <a href="https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf">Cerema</a> Evaluation de la capacité aux feux retour d'observations en France: De la phase conception à l'épreuve du terrain
@@ -271,7 +270,7 @@ Ci dessous vous trouverez quelques sources utiles au traitement du projet:
 
 Oral: Note: Je n'aime pas personnellement les questions pièges
 
-Rapport: Le rapport doit être rédigé dans un français de qualité et de manière consise. Le rapport ne doit pas exéder les 10-15 pages, evitez donc trop de répétition et de divager sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisagables
+Rapport: Le rapport doit être rédigé de manière concise. Le rapport ne doit pas excéder les 10-15 pages, évitez donc trop de répétition et de divaguer sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisageables.
 
 Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
