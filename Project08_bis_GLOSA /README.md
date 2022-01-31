@@ -1,5 +1,4 @@
 
-
 <h1 align="center">Description du projet</h1>
 
 
@@ -45,7 +44,9 @@ On peut généraliser cette approche à des réseaux de multisegment:
   
 "Soit une liste de n segments S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leur longueur l<sub>i</sub> où 1<i<n, les vitesses minimums et maximums du segment i, [v<sub>i</sub><sup>min</sup>, v<sub>i</sub><sup>max</sup>], sont connues.
 
-L'horaires des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'état du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objectif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+
+L'horaire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+
 
 <p align="center">   
    <img src="https://github.com/licit-lab/ITSProjects/blob/dev/Project07-GLOSA/image/Screenshot%202021-12-14%20at%2013-14-40%20Comparison%20of%20Green%20Light%20Optimal%20Speed%20Advisory%20approaches.png" width="600">
@@ -72,7 +73,7 @@ De manière similaire, les deux images suivantes représentent le cas, où le fe
    </p>
  
  
-De façon plus avancée, il est également possible de formuler et appliquer cette problématique dans l'optique d'une étude de voie verte (ref ?).
+
 
 <br>
 </div>
@@ -81,7 +82,7 @@ De façon plus avancée, il est également possible de formuler et appliquer cet
 <div align="justify">
 La mise en place de ce cas d'utilisation suscite quelques questionnements et n'est pas sans enjeux:
 <ul>
-  <li> Quels est sont les impacts en termes d'efficacité du trafic ? Ce cas d'usage permet-il de réduire la congestion aux abords d'un feu de circulation ? </li>
+  <li> Quels sont les impacts en termes d'efficacité du trafic ? Ce cas d'usage permet-il de réduire la congestion aux abords d'un feu de circulation ? </li>
   <li> Quels sont les impacts en termes d'émissions de polluants? Peut-on réduire les émissions relatives au trafic ? etc... </li>
 </ul>
 Toutes ces questions sont au centre du GLOSA et le but de ce sujet est précisément de mener des analyses pour qualifier ces impacts. Avant d'aborder les concepts liés à la recherche, nous allons voir comment le GLOSA peut-être intégré et étudié dans l'outil de simulation SUMO (Simulation of Urban MObility).
@@ -104,11 +105,11 @@ Pour mettre en place ce module, il faut à la fois équiper les véhicules et l'
 </div>   
 
 <br>
-<h3 align="center">Equipement des véhicules</h3>
+<h3 align="center">Équipement des véhicules</h3>
 
 <br/> 
 <div align="justify">
-Pour équiper les véhicules d'un <a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">dispositif</a> d'information existante dans SUMO, il existe principalement deux manières:
+Pour équiper les véhicules d'un <a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">dispositif</a> d'information existant dans SUMO, il existe principalement deux manières:
 <br/>   
   <ul>
     <li>Soit nous ciblons le type de véhicules, que nous voulons équiper du dispositif. Dans ce cas, il faut modifier la structure des fichiers d'entrée de SUMO visant à décrire les véhicules pour y intégrer la commande: </li>
@@ -144,12 +145,12 @@ Pour équiper les véhicules d'un <a href="https://sumo.dlr.de/docs/Definition_o
     <li>D'autres approches existent également, comme l'implantation déterministe ou l'établissement d'une liste d'identifiants des véhicules à équiper lors du lancement de scénario en ligne de commande, mais, pour ce projet, il ne sera pas utile de les utiliser.
     </li>
     </ul>
-Tout les approches se valent, il suffit de choisir dans un premier temps la quel vous êtes le plus à l'aise d'utiliser. À noter que cette approche est similaire pour d'autres équipements en remplaçant glosa par l'<a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">équipement</a> présent dans SUMO.
+Toutes les approches se valent, il suffit de choisir le plus facile à utiliser pour vous. À noter que cette approche est similaire pour d'autres équipements en remplaçant le GLOSA par l'<a href="https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html#devices">équipement</a> présent dans SUMO.
 </div>  
 
 <br>
 <br>
-<h3 align="center">Equipement des feux de circulation</h3>
+<h3 align="center">Équipement des feux de circulation</h3>
 <br/>
 <div align="justify">
 Il existe différentes manières de bâtir une simulation du trafic dans SUMO. Les scénarios faisant appel au GLOSA ne font pas exception. 
@@ -182,7 +183,7 @@ Cette approche à l'avantage de cibler le feu de circulation du réseau.
 Il existe 4 paramètres GLOSA dans SUMO:
 
   <ul>
-    <li>device.glosa.range : spécifier la distance de communication du feu de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par défaut égal à 100 mètres</li>
+    <li>device.glosa.range : spécifie la distance de communication du feu de circulation,il s'applique sur le feux de circulation et SUR LA VOITURE et il est par défaut égal à 100 mètres</li>
     <li>device.glosa.min-speed : indique la vitesse minimum pour effectuer la manœuvre, il s'applique au paramètre du véhicule et il est par défaut égal à 5m/s soit 18 km/h</li>
     <li>device.glosa.max-speedfactor : indique le speedfactor lors de la communication, il s'applique au paramètre du véhicule et il est par défaut égal à 1.1</li>
     <li>jmDriveAfterYellowTime : indique la volonté de continuer à rouler au jaune en fonction de la durée de fonctionnement de la phase jaune (par défaut 0). La valeur sera prise en compte lors de la vérification de la faisabilité d'une manœuvre d'accélération</li>
@@ -199,7 +200,7 @@ Pour ce faire, des fichiers sont présents dans le dossier simulation_sumo. Ce r
   <li>un reseau (fichier ```.net```), </li>
   <li>un fichier de demande (```.rou```) qui contient la demande en transport, ainsi que la distribution des types de véhicules (phase de génération de la demande par type de véhicule),</li>
   <li>un fichier additionnel comprenant les paramètres du GLOSA pour le feu de circulation, et</li> 
-  <li>un fichier ```.sumocfg```qui est le fichier permettant l'exécution de la simulation. </li>
+  <li>un fichier ```.sumocfg``` qui est le fichier permettant l'exécution de la simulation. </li>
 </ul>
 À noter encore que cette configuration de la simulation n'est pas exclusive. Plusieurs types d'imbrication sont possibles, libres à vous, de la modifier pour proposer d'autres structures. 
  
@@ -240,19 +241,22 @@ Pour l'analyse globale, vous devrez évaluer la différence en termes de:
  - Nombre de véhicules qui s'arrêtent
  - Volume des véhicules à l'arrêt et le pourcentage de véhicules à l'arrêt en fonction du taux de pénétration des VAC
  - Comparaison des deux diagrammes espaces-temps
+ - Évaluation environnementale
+ - Etc.
  
 Vous pourrez utiliser le jupyter notebook pour vous aider dans les démarches et les figures disponibles. Néanmoins, la librairie plotly n'est qu'un outil, libre à vous d'en utiliser une autre. Également, les figures proposées dans ce juypternotebook ne sont pas forcément exactement les mêmes que celles demandées pour répondre aux questions. À vous de les adapter!
- 
+  
 </div>
 
 <h2 align="center">Partie II : Modification du réseau</h2>
 
 Une des questions légitimes sur la mise en places des GLOSA est de connaitre ses limites en fonction du réseau étudiant. Ainsi dans cette partie ouverte, il est demandé de:
 
- - <b>Q2: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombres de voies sur le réseau. Par exemple nombre de voie=[1,2,3,4]
- - <b>Q3: </b> A demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux.  Par exemple des cycles=[30,60,90,120,150]
+ - <b>Q2: </b> À demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différents nombres de voies sur le réseau. Par exemple nombre de voie=[1,2,3,4]
+ - <b>Q3: </b> À demande fixe et taux de VAC fixe, évaluer l'impact du GLOSA pour différentes valeurs de cycle de feux.  Par exemple des cycles=[30,60,90,120,150]
 
-Il serait bien dans cette partie de faire des quadrillages avec dans l'ordonnée et l'abscisse les nombres de voies et les facteurs de cycles
+Il serait bien dans cette partie de procéder à un plan d'expérience par quadrillage avec, en ordonnée et abscisse, les nombres de voies et les facteurs de cycles, en considérant un ou des indicateurs de performances. Comme dans la partie I, d'autres indicateurs sont bien à analyser.
+
 
 <h2 align="center">Sources utiles</h2>
 
@@ -262,17 +266,21 @@ Ci-dessous vous trouverez quelques sources utiles au traitement du projet:
 - <a href="https://www.cerema.fr/system/files/documents/2020/08/evaluation_capacite_feux_france_2016_cle4e6dd3.pdf">Cerema</a> Evaluation de la capacité aux feux retour d'observations en France: De la phase conception à l'épreuve du terrain
 - <a href="https://sumo.dlr.de/docs/Simulation/GLOSA.html">GLOSA</a> sur SUMO
 
- 
- 
+<h2 align="center">Modalités d'évaluation</h2>
 
-<h2 align="center">Partie II : Modification de la demande</h2>
+Oral: Note: Je n'aime pas personnellement les questions pièges
 
-Un des enjeux légitimes sur la mise en place du GLOSA est d'identifier son ODD (Operational Design Domain), c'est-à-dire son domaine opérationnel optimal. Ceci passe par une analyse de ses limites de performance en fonction de la demande. Ainsi dans cette partie, il est demandé de:
+Rapport: Le rapport doit être rédigé de manière concise. Le rapport ne doit pas excéder les 10-15 pages, évitez donc trop de répétition et de divaguer sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisageables.
 
- - <b>Question 2: </b> A demande totale fixe, évaluer l'influence d'un taux de VAC augmentant sur le réseau. Vous pourrez considérer par exemple les valeurs de MPR suivantes [0%,10%,30%,50%,75%,100%]
- - <b>Question 3: </b> A taux de VAC constant (ie flotte de véhicules connectés identique), évaluer les limites du GLOSA pour une demande augmentant. Par exemple, prendre des demandes évoluant de la façon suivante d=[500,1000,1500,2000,2500,3000].
+Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
-Il serait bien dans cette partie de procéder à un plan d'expérience par quadrillage avec, en ordonnée et abscisse, la demande et le taux de pénétration des véhicules, en considérant un ou des indicateurs de performances tels que la remontée de queue de bouchon, etc
+<h2 align="center">Modalités d'évaluation</h2>
+
+Oral: Note: Je n'aime pas personnellement les questions pièges
+
+Rapport: Le rapport doit être rédigé de manière concise. Le rapport ne doit pas excéder les 10-15 pages, évitez donc trop les répétitions et de divaguer sur certains points, notamment dans l'introduction et dans la conclusion. J'attends également une analyse sur la limite de vos démarches ainsi que des perspectives envisageables.
+
+Pour toutes questions éventuelles sur le projet, vous pouvez me contacter à l'adresse hugues.blache@entpe.fr ou bien poser des questions sur le Moodle. 
 
 <h2 align="center">Bibliographie</h2>
 <br/> 
