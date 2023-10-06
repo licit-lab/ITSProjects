@@ -22,14 +22,14 @@ Le <i>Green Light Optimal Speed Advice</i> (GLOSA) est un service basé sur un s
 <h3 align="center">Comment ça marche ?</h3>
 <br/> 
 <div align="justify">
-Le GLOSA informe le conducteur du véhicule de la présence d'un feu de circulation, de son état actuel (phase) et de la durée restante pour la phase courante. À l'approche de cette intersection, il est tout à fait possible que l'état du feu soit distinct sur chacune des voies. Deux cas peuvent se produire:
+Le GLOSA informe le conducteur du véhicule de la présence d'un feu de circulation, de son état actuel (phase) et de la durée restante pour la phase courante. À l'approche de cette intersection, deux cas peuvent se produire:
 <ul>
-  <li>soit le feu est rouge : dans ce cas, le feu de circulation indique si oui ou non, il pourra passer à la phase verte pour un changement de vitesse donnée, </li>
-  <li>soit la phase est déjà verte : dans ce cas, l'information concerne si oui ou non le véhicule pourra passer en considérant une vitesse donnée.</li>
+  <li>soit la phase courante du feu est rouge : à partir de la durée restante de rouge, de la distance à l'intersection du véhicule et de la durée du cycle, l'algorithme GLOSA estime la vitesse à adopter pour franchir l'intersection durant la phase verte. Si cette instruction de vitesse reste raisonnable (au-délà d'un certain seuil), elle est alors affichée dans la cabine. Sinon, une recommendation de ralentissement en vue d'un arrêt en envoyée au conducteur. </li>
+  <li>soit la phase courante est verte : de façon similaire, l'algorithme estime si le véhicule est en mesure de franchir l'intersection avant la fin de la phase verte et à quelle vitesse. Si la vitesse reste inférieure à la vitesse limite, alors aucune recommendation est envoyée au conducteur. Dans le cas contraire, une instruction de ralentissement est envoyée pour préparer le conducteur à s'arrêter prochainement. </li>
 </ul>
 
  
-Mathématiquement, il est possible de traduire ce procédé selon la formulation du monosegment de 
+Mathématiquement, il est possible de traduire ce procédé selon la formulation du mono-segment de 
 <a href="https://ieeexplore.ieee.org/document/6728552">Seredynski et al.</a>:
 
 "Soit un segment <i>s</i> de longueur <i>l</i>  connu, soit les vitesses minimales et maximales sur le segment [v<sup>min</sup>,v<sup>max</sup>], ainsi que la fonction <i>t<sub>s</sub></i> lisant à tout instant <i>t</i> la table horaire associée aux feux de circulation en extrémité de section, <i>t<sub>s</sub>(t)={GREEN,YELOW,RED}</i>. 
@@ -44,7 +44,7 @@ On peut généraliser cette approche à des réseaux de multisegment:
 "Soit une liste de n segments S={s<sub>1</sub>,...,s<sub>n</sub>}, avec leur longueur l<sub>i</sub> où 1<i<n, les vitesses minimums et maximums du segment i, [v<sub>i</sub><sup>min</sup>, v<sub>i</sub><sup>max</sup>], sont connues.
 
 
-L'horaire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objetif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
+L'horaire des feux de circulation t<sub>si</sub> à la fin du segment i définissant l'etat du feu de circulation à l'instant t, <i>t<sub>si</sub>(t)={GREEN,YELOW,RED}</i>. L'objectif est de trouver la vitesse conseillée sur chacun des segments, v={v<sub>1</sub>,...,v<sub>n</sub>} qui minimisera un certain objectif f(v)":
 
 
 <p align="center">   
