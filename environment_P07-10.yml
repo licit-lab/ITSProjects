@@ -5,7 +5,7 @@ channels:
 dependencies:
   - python>=3.8
   - numpy
-  - pandas=1.3.5
+  - pandas=2.2.2
   - plotly=5.5
   - jupyterlab-plotly-extension
   - lxml = 4.7
