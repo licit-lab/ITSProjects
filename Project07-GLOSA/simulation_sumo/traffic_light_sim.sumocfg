@@ -1,21 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="traffic_light_net.net.xml"/>   <!-- fichier reseau -->  
-        <route-files value="traffic_light_rou_sans_glosa.rou.xml"/> <!-- fichiers de la demande -->  
+        <net-file value="traffic_light_net.net.xml" />     
+        <route-files value="traffic_light_rou_glosa.rou.xml" />   
     </input>
 
     <time>
-        <begin value="0"/>   <!-- debut de la simulation-->
-        <end value="3600"/>  <!-- fin de la simulation-->
+        <begin value="0" />   
+        <end value="3600" />  
     </time>
 
     <output>
-        <tripinfo-output value="trip_info_test_100"/> <!-- sorite de tripinfo /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
-        <summary-output value="summary_100"/> <!-- sorite de summary /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
-        <queue-output value="queue_100"/> <!-- sorite de queue /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
-        <fcd-output value="FCD_test_100"/> <!-- sorite de FCD /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
-        <emission-output value="emission_test_100"/> <!-- sorite de emmission /!\ l'indice 100 et à changer si l'on veut appliquer les codes-->
+        <tripinfo-output value="./outputs/trip_info_test_mpr100range1000.xml" />  
+        <summary-output value="./outputs/summary_mpr100range1000.xml" />  
+        <queue-output value="./outputs/queue_mpr100range1000.xml" />  
+        <fcd-output value="./outputs/FCD_test_mpr100range1000.xml" />  
+        <emission-output value="./outputs/emission_test_mpr100range1000.xml" />  
     </output>
 
 </configuration>

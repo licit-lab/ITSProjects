@@ -1,9 +1,9 @@
 <routes>
      <vTypeDistribution id="vehicles">
-        <vType id="normal" color="0,255,255"  vClass="private"  probability="0" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2"  speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
+        <vType id="normal" color="0,255,255"  vClass="private"  probability="1" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2"  speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
          <param key="has.glosa.device" value="false"/>  
          </vType>
-        <vType id="CAV" color="255,0,255"  vClass="private" probability="1" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2" speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
+        <vType id="CAV" color="255,0,255"  vClass="private" probability="0" accel="2.6" decel="4.5" sigma="0.5" emissionClass="HDV_3_2" speedFactor="normc(1.0,0.1,0.6,1.3)" maxSpeed="27.78">
             <param key="has.glosa.device" value="true"/>
             <param key="device.max.speedfactor" value="10"/>
 			<param key="device.glosa.range" value="1000"/>

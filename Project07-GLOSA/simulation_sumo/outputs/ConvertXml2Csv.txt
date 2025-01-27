@@ -1,0 +1,12 @@
+Execute in your shell
+
+cd "your/current/directory/"
+python tools/xml/xml2csv.py input.xml
+
+
+--------------
+
+python tools/xml/xml2csv.py input.xml
+
+
+

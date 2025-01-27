@@ -1,0 +1,16 @@
+To Execute in your shell/prompt:
+
+cd "your/current/directory/"
+sumo -c traffic_light_sim.sumocfg --device.glosa.range 100 --output-prefix glosa_range_100_mpr_100
+
+python xml/xml2csv.py ./outputs/glosa_range_100_mpr_100queue_mpr.xml
+python xml/xml2csv.py outputs/glosa_range_100_mpr_100FCD_test_mpr.xml
+
+
+
+
+
+
+
+
+
